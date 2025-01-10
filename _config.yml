@@ -12,9 +12,9 @@ title                    : "Dayu's Website"
 title_separator          : "-"
 name                     : &name "Dayu Xia"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : "https://dyxia1241.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "dyxia1241/dyxia1241.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Dayu Xia"
   pronouns         : "he/him"  
-  bio              : "Mechanical Engineering @ ZJU & UIUC"
+  bio              : "Mechanical Engineering @ ZJUI / Prospective M.S. student @ 26 Fall"
   location         : "Shanghai, P.R.C."
   employer         : "Zhejiang University"
   uri              : # URL
@@ -44,12 +44,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "dyxia1241"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -72,7 +72,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # Username
+  zhihu            : "Leslie"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
