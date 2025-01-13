@@ -11,37 +11,42 @@ redirect_from:
 
 Education
 ======
-* B.Eng. in Mechanical Engineering, Zhejiang University, 2022 - 2026
+* B.Eng. in Mechanical Engineering, Zhejiang University, 09/2022 - 06/2026
   * GPA: 3.783/4.0, Rank: 6/56
-* B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, 2022 - 2026
+* B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, 09/2022 - 06/2026
   * GPA: 3.89/4.0
   * Minor in Mathematics, pending
 
 Academic & Industrial experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Research Assistant @ University of Illinois Urbana-Champaign, 06/2024 - 
+  * Using LSTM to predict patients' handwriting patterns via window shifting normalization
+  * Developing projection method for white-box training the GRU network
+  * Stability and linearization analysis of GRU and LSTM neural networks around equilibrium
+  * Supervised by Prof. [Dusan Stipanovic](https://ise.illinois.edu/directory/profile/dusan)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Research Assistant @ Zhejiang University, 09/2023 - 12/2023
+  * Integrate ChatPDF and ChatGPT to construct knowledge embedding between users and the LLM
+  * Construct website frame using React and Java script, achieving an interactable purpose to collect conversation data
+  * Supervised by Prof. [Meng Zhang](https://zjui.intl.zju.edu.cn/en/node/1651)
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Data Analyst Intern @ Tellgen Corporation, 07/2023 - 08/2023
+  * Achieve experimental data visualization through Python
+  * Construct classifier through algorithms such as K-Nearest Neighbor and K-Means Clustering to divide and co-analyze molecular meta data and further the infected cases
+  * Supervised by Mr. Xiaofeng Zhang
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Languages
+  * Python, Latex
+  * C, SQL, Julia
+* English 
+  * TOEFL: 107
+  * CET4: 681, CET6: 604
+* Miscellaneous
+  * Github, RNN & Transformer architecture developing
+  * Fusion, Solidworks
+  * Adobe & Office toolset
 
 Publications
 ======
@@ -49,10 +54,15 @@ Publications
  
 Selective Awards
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>  
+* Provincial Scholarship (3%), Zhejiang Provincial Government, 09/2024
+* Participant, HKUST Summer Camp for Elite Students (hosted by [Dept. of IEDA](https://ieda.ust.hk/eng/index.php)), 07/2024
+* Silver Metal, China International College Students' Innovation Competition, 11/2023
+* Second Prize, Zhejiang University Student Scholarship, 09/2023 & 2024
+* First Prize, Zhejiang University Student Winter Vacation Social Practice, 05/2023
+* Honorable Mention, Mathematical Contest In Modeling, 02/2023
+* Second Prize, The Chinese Mathematics Competitions, 11/2022
   
 Projects
 ======
-* Currently signed in to 43 different slack teams
+* [Integrated report, "Multi-dimensional Comparison Report Between Chengdu and Hangzhou](https://dyxia1241.github.io/files/Report_Chengdu%26Hangzhou.pdf), 05/2023
+* [Integrated report, "Prediction and Analysis of the Wordle Game"](https://dyxia1241.github.io/files/Wordle%20Game%20Prediction.pdf), 02/2023
