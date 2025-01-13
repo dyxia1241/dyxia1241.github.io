@@ -11,11 +11,13 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.Eng. in Mechanical Engineering, Zhejiang University, 2022 - 2026
+  * GPA: 3.783/4.0, Rank: 6/56
+* B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, 2022 - 2026
+  * GPA: 3.89/4.0
+  * Minor in Mathematics, pending
 
-Work experience
+Academic & Industrial experience
 ======
 * Spring 2024: Academic Pages Collaborator
   * Github University
@@ -43,22 +45,14 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* pending
+ 
+Selective Awards
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+  {% endfor %}</ul>  
   
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+Projects
 ======
 * Currently signed in to 43 different slack teams
