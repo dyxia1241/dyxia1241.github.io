@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -16,6 +16,9 @@ Education
 * B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, 09/2022 - 06/2026
   * GPA: 3.89/4.0
   * Minor in Mathematics, pending
+* Coursework
+  * Calculus (A), Differential Equations (A+), Linear Algebra (A+), Probability Theory (A+), Numerical Analysis (A+), Intro. to Computing (Python & MatLab) (A+), Thermo & Quantum Physics (A), Analog Circuits & Systems (A+), Fluid Dynamics (A+), Mechanical Design (A), Dynamics of Mechanical Systems (A+)
+  * Via Linkedin Learning: Discrete Mathematics, C Programming, Applied Machine Learning: Algorithms 
 
 Academic & Industrial experience
 ======
@@ -23,12 +26,12 @@ Academic & Industrial experience
   * Using LSTM to predict patients' handwriting patterns via window shifting normalization
   * Developing projection method for white-box training the GRU network
   * Stability and linearization analysis of GRU and LSTM neural networks around equilibrium
-  * Supervised by Prof. [Dusan Stipanovic](https://ise.illinois.edu/directory/profile/dusan)
+  * Supervised by [Prof. Dusan Stipanovic](https://ise.illinois.edu/directory/profile/dusan)
 
 * Research Assistant @ Zhejiang University, 09/2023 - 12/2023
   * Integrate ChatPDF and ChatGPT to construct knowledge embedding between users and the LLM
   * Construct website frame using React and Java script, achieving an interactable purpose to collect conversation data
-  * Supervised by Prof. [Meng Zhang](https://zjui.intl.zju.edu.cn/en/node/1651)
+  * Supervised by [Prof. Meng Zhang](https://zjui.intl.zju.edu.cn/en/node/1651)
 
 * Data Analyst Intern @ Tellgen Corporation, 07/2023 - 08/2023
   * Achieve experimental data visualization through Python
