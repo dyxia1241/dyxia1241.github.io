@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * High school diploma, Shanghai Jincai High School, **08/2019 - 07/2022**
-  * **Rank**: 3%
+  * **Rank**: 3% (*track: Gaokao*)
 * B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
   * **GPA**: 3.783/4.0, **Rank**: 6/56 (*yet to be updated*)
 * B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
