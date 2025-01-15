@@ -1,12 +1,12 @@
 ---
 title: "Robotic Trail Maker Platform Facilitating Rehabilitation of Neurological Conditions: For Clinical Use"
 collection: publications
-#category: conferences
-#permalink: /publication/2024-02-17-paper-title-number-4
+category: conferences
+permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'This working is in progress.'
 date: 2024-02-17
-#venue: 'GitHub Journal of Bugs'
-#paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+venue: 'GitHub Journal of Bugs'
+paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 citation: 'pending'
 ---
 
