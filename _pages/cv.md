@@ -70,8 +70,8 @@ Selective Awards
 Projects
 ======
 * [Integrated report, "Multi-dimensional Comparison Report Between Chengdu and Hangzhou](https://dyxia1241.github.io/files/Report_Chengdu%26Hangzhou.pdf), **05/2023**
-  * After field inspection and interview, we summarize a multi-dimensional comparsion report bewteen the two "semi-tier-one" cities in China. The aim is to provide a guide for younger generation while faced with the question of where to settle down. As living expenses are rocketing in the traditional tier-one cities (Beijing, Shanghai, Guangzhou & Shenzhen), more and more people are moving out and seeking more economic choices.
-  * The report was awarded with the **first prize** among other contestants of the Zhejiang University Student Winter Vacation Social Practice in 2023.
+  * After field inspection and interview, we summarize a multi-dimensional comparison report between the two "semi-tier-one" cities in China. The aim is to provide a guide for younger generation while faced with the question of where to settle down. As living expenses are rocketing in the traditional tier-one cities (Beijing, Shanghai, Guangzhou & Shenzhen), more and more people are moving out and seeking more economic choices.
+  * The report was awarded with the **First Prize** among other contestants of the Zhejiang University Student Winter Vacation Social Practice in 2023.
  
 * [Integrated report, "Prediction and Analysis of the Wordle Game"](https://dyxia1241.github.io/files/Wordle%20Game%20Prediction.pdf), **02/2023**
   * We predict the results counts and the difficulty distribution of the famous [Wordle game](https://www.nytimes.com/games/wordle/index.html). Entropy-alike familiarity is defined to program a human-alike game solver, while regression and clustering algorithms are used to categorize candidate words.
