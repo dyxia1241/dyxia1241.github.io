@@ -1,6 +1,6 @@
 ---
 title: "Zhangjiajie National Forest Park"
-excerpt: "The photo was taken in Zhangjiajie, Hunan, China<br/><img src='/images/ZJJ.png'>"
+excerpt: "The photo was taken in Zhangjiajie, Hunan, China<br/><img src='/images/ZJJ.jpg'>"
 collection: portfolio
 ---
 
