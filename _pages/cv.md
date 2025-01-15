@@ -50,12 +50,12 @@ Skills
   * CET4: 681, CET6: 604
 * Miscellaneous
   * Github, RNN & Transformer architecture developing
-  * Fusion, Solidworks
+  * Fusion 360, Solidworks
   * Adobe & Office toolset
 
 Publications
 ======
-* *Robotic Trail Maker Platform Facilitating Rehabilitation of Neurological Conditions: For Clinical Use*， pending
+* *Robotic Trail Maker Platform Facilitating Rehabilitation of Neurological Conditions: For Clinical Use*， in progress
  
 Selective Awards
 ======
