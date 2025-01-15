@@ -21,11 +21,11 @@ repository               : "dyxia1241/dyxia1241.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "me.jpg"
+  avatar           : "me_casual.jpg"
   name             : "Dayu Xia"
   pronouns         : "he/him"  
   bio              : "Mechanical Engineering @ ZJUI \n Prospective M.S. student @ 26 Fall"
-  location         : "Shanghai, P.R.C."
+  location         : "Shanghai, China"
   employer         : "Zhejiang University"
   uri              : # URL
   email            : "dayu.22@intl.zju.edu.cn" 
