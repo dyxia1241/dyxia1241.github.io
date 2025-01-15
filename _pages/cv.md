@@ -20,7 +20,7 @@ Education
   * Minor in Mathematics, pending
 * Coursework
   * Calculus (A), Differential Equations (A+), Linear Algebra (A+), Probability Theory (A+), Numerical Analysis (A+), Intro. to Computing (Python & MatLab) (A+), Thermo & Quantum Physics (A), Analog Circuits & Systems (A+), Fluid Dynamics (A+), Mechanical Design (A+), Dynamics of Mechanical Systems (A+)
-  * Via Linkedin Learning: Discrete Mathematics, C Programming, Applied Machine Learning: Algorithms 
+  * Via [Linkedin Learning](https://www.linkedin.com/learning/browse/business): Discrete Mathematics, C Programming, Applied Machine Learning: Algorithms 
 
 Academic & Industrial experience
 ======
