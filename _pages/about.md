@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Dayu Xia (夏大雨), majoring in Mechanical Engineering @ [ZJUI, Zhejiang University](https://zjui.intl.zju.edu.cn/en) and [Dept. of MechSE, U of I](https://mechse.illinois.edu/) (dual degree program).
+Hi there! I am Dayu Xia (夏大雨), majoring in Mechanical Engineering @ [ZJUI, Zhejiang University](https://zjui.intl.zju.edu.cn/en) and [Dept. of MechSE, University of Illinois Urbana-Champaign](https://mechse.illinois.edu/) (dual degree program).
 
 About me
 ======
