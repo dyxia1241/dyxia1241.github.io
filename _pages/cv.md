@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
-  * **GPA**: 3.783/4.0, **Rank**: 6/56 (*yet to be updated*)
+  * **GPA**: 3.783/4.0, **Rank**: 6/56 
 * B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
   * **GPA**: 3.89/4.0
   * Minor in Mathematics, pending
@@ -25,7 +25,8 @@ Education
 Academic & Industrial experience
 ======
 * Research Assistant @ University of Illinois Urbana-Champaign, **06/2024 -** 
-  * Using LSTM and Transformer architecture to predict patients' handwriting patterns via window shifting normalization
+  * The patient classification accuracy using the 1D-CNN + Attention + Bi-LSTM architecture improved by nearly 10% compared to other state-of-the-art (SOTA) models
+  * Using Inverse Reinforcement Learning (Inverse RL) and Assistance-As-Needed techniques for auxiliary level planning
   * Developing projection method for white-box training the GRU network
   * Stability and linearization analysis of GRU and LSTM neural networks around equilibrium
   * Supervised by [Prof. Dusan Stipanovic](https://ise.illinois.edu/directory/profile/dusan)
@@ -55,7 +56,7 @@ Skills
 
 Publications
 ======
-* *Robotic Trail Maker Platform Facilitating Rehabilitation of Neurological Conditions: For Clinical Use*， in progress
+* **D. Xia**, H. Nisar, S. Annamraju, D. Stipanovic, *"Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases"*, working paper to be submitted to [IEEE TNSRE](https://www.embs.org/tnsre/), under review.
  
 Selective Awards
 ======
