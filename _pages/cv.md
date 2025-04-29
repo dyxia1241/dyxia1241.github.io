@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+🎓️Education
 ======
 * B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
   * **GPA**: 3.783/4.0, **Rank**: 6/56 
@@ -22,7 +22,7 @@ Education
   * Calculus (A), Differential Equations (A+), Linear Algebra (A+), Probability Theory (A+), Numerical Analysis (A+), Intro. to Computing (Python & MatLab) (A+), Thermo & Quantum Physics (A), Analog Circuits & Systems (A+), Fluid Dynamics (A+), Mechanical Design (A+), Dynamics of Mechanical Systems (A+)
   * Via [Linkedin Learning](https://www.linkedin.com/learning/browse/business): Discrete Mathematics, C Programming, Applied Machine Learning: Algorithms 
 
-Academic & Industrial experience
+💡Academic & Industrial experience
 ======
 * Research Assistant @ University of Illinois Urbana-Champaign, **06/2024 -** 
   * The patient classification accuracy using the 1D-CNN + Attention + Bi-LSTM architecture improved by nearly 10% compared to other state-of-the-art (SOTA) models
@@ -41,7 +41,7 @@ Academic & Industrial experience
   * Construct classifier through algorithms such as K-Nearest Neighbor and K-Means Clustering to divide and co-analyze molecular meta data and further the infected cases
   * Supervised by Mr. Xiaofeng Zhang
   
-Skills
+⚙️Skills
 ======
 * Languages
   * Python, Latex
@@ -54,11 +54,11 @@ Skills
   * Fusion 360, Solidworks
   * Adobe & Office toolset
 
-Publications
+📜Publications
 ======
-* **D. Xia**, H. Nisar, S. Annamraju, D. Stipanovic, *"Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases"*, working paper to be submitted to [IEEE TNSRE](https://www.embs.org/tnsre/), under review.
+* **D. Xia<sup>*</sup>**, **S. Annamraju<sup>*</sup>**, **H. Nisar<sup>*</sup>**, S. A. Deka, A. Horowitz, N. Milković, and D. M. Stipanović, [*"Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases"*](https://arxiv.org/pdf/2504.19230), submitted to [IEEE TNSRE](https://www.embs.org/tnsre/), under review.
  
-Selective Awards
+🔖Selective Awards
 ======
 * Provincial Scholarship (3%), Zhejiang Provincial Government, **09/2024**
 * Participant, HKUST Summer Camp for Elite Students (hosted by [Dept. of IEDA](https://ieda.ust.hk/eng/index.php)), **07/2024**
@@ -68,7 +68,7 @@ Selective Awards
 * Honorable Mention, Mathematical Contest In Modeling, **02/2023**
 * Second Prize, The Chinese Mathematics Competitions, **11/2022**
   
-Projects
+🖇️Projects
 ======
 * [Integrated report, "Multi-dimensional Comparison Report Between Chengdu and Hangzhou](https://dyxia1241.github.io/files/Report_Chengdu%26Hangzhou.pdf), **05/2023**
   * After field inspection and interview, we summarize a multi-dimensional comparison report between the two "semi-tier-one" cities in China. The aim is to provide a guide for younger generation while faced with the question of where to settle down. As living expenses are rocketing in the traditional tier-one cities (Beijing, Shanghai, Guangzhou & Shenzhen), more and more people are moving out and seeking more economic choices.
