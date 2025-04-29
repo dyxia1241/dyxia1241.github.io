@@ -15,7 +15,7 @@ redirect_from:
   * **GPA**: 3.783/4.0, **Rank**: 6/56 
 * B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
   * **GPA**: 3.89/4.0
-  * Minor in Mathematics, pending
+  * Minor in Mathematics
 * High school diploma, Shanghai Jincai High School, **08/2019 - 07/2022**
   * **Rank**: 3% (*track: Gaokao*)
 * Coursework
@@ -29,7 +29,7 @@ redirect_from:
   * Using Inverse Reinforcement Learning (Inverse RL) and Assistance-As-Needed techniques for auxiliary level planning
   * Developing projection method for white-box training the GRU network
   * Stability and linearization analysis of GRU and LSTM neural networks around equilibrium
-  * Supervised by [Prof. Dusan Stipanovic](https://ise.illinois.edu/directory/profile/dusan)
+  * Supervised by [Prof. Dušan M. Stipanović](https://ise.illinois.edu/directory/profile/dusan)
 
 * Research Assistant @ Zhejiang University, **09/2023 - 12/2023**
   * Integrate ChatPDF and ChatGPT to construct knowledge embedding between users and the LLM
@@ -50,7 +50,7 @@ redirect_from:
   * TOEFL: 107
   * CET4: 681, CET6: 604
 * Miscellaneous
-  * Github, RNN & Transformer architecture developing
+  * Github, PyTorch & Tenserflow
   * Fusion 360, Solidworks
   * Adobe & Office toolset
 
