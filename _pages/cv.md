@@ -20,7 +20,11 @@ redirect_from:
   * **Rank**: 3% (*track: Gaokao*)
 * Coursework
   * Calculus (A), Differential Equations (A+), Linear Algebra (A+), Probability Theory (A+), Numerical Analysis (A+), Intro. to Computing (Python & MatLab) (A+), Thermo & Quantum Physics (A), Analog Circuits & Systems (A+), Fluid Dynamics (A+), Mechanical Design (A+), Dynamics of Mechanical Systems (A+)
-  * Via [Linkedin Learning](https://www.linkedin.com/learning/browse/business): Discrete Mathematics, C Programming, Applied Machine Learning: Algorithms 
+  * Via [Linkedin Learning](https://www.linkedin.com/learning/browse/business): Discrete Mathematics, C Programming, Applied Machine Learning: Algorithms
+ 
+📜Publications
+======
+* **D. Xia<sup>*</sup>**, **S. Annamraju<sup>*</sup>**, **H. Nisar<sup>*</sup>**, S. A. Deka, A. Horowitz, N. Milković, and D. M. Stipanović, [*"Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases"*](https://arxiv.org/pdf/2504.19230), submitted to [IEEE TNSRE](https://www.embs.org/tnsre/), under review.
 
 💡Academic & Industrial experience
 ======
@@ -54,9 +58,6 @@ redirect_from:
   * Fusion 360, Solidworks
   * Adobe & Office toolset
 
-📜Publications
-======
-* **D. Xia<sup>*</sup>**, **S. Annamraju<sup>*</sup>**, **H. Nisar<sup>*</sup>**, S. A. Deka, A. Horowitz, N. Milković, and D. M. Stipanović, [*"Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases"*](https://arxiv.org/pdf/2504.19230), submitted to [IEEE TNSRE](https://www.embs.org/tnsre/), under review.
  
 🔖Selective Awards
 ======
