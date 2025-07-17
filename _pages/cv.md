@@ -12,15 +12,14 @@ redirect_from:
 🎓️Education
 ======
 * B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
-  * **GPA**: 3.783/4.0, **Rank**: 6/56 
+  * **GPA**: 3.81/4.0, **Rank**: 6/56 
 * B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
-  * **GPA**: 3.89/4.0
+  * **GPA**: 3.91/4.0
   * Minor in Mathematics
 * High school diploma, Shanghai Jincai High School, **08/2019 - 07/2022**
   * **Rank**: 3% (*track: Gaokao*)
-* Coursework
-  * Calculus (A), Differential Equations (A+), Linear Algebra (A+), Probability Theory (A+), Numerical Analysis (A+), Intro. to Computing (Python & MatLab) (A+), Thermo & Quantum Physics (A), Analog Circuits & Systems (A+), Fluid Dynamics (A+), Mechanical Design (A+), Dynamics of Mechanical Systems (A+)
-  * Via [Linkedin Learning](https://www.linkedin.com/learning/browse/business): Discrete Mathematics, C Programming, Applied Machine Learning: Algorithms
+* Selective Coursework
+  * Calculus, Differential Equations, Linear Algebra, Probability Theory, Numerical Analysis, Quantum Physics, Fluid Dynamics, Mechanical Design, Analog Circuits \& Systems, Signal Processing, Data Structures 
  
 📜Publications
 ======
@@ -28,35 +27,34 @@ redirect_from:
 
 💡Academic & Industrial experience
 ======
-* Research Assistant @ University of Illinois Urbana-Champaign, **06/2024 -** 
-  * The patient classification accuracy using the 1D-CNN + Attention + Bi-LSTM architecture improved by nearly 10% compared to other state-of-the-art (SOTA) models
-  * Using Inverse Reinforcement Learning (Inverse RL) and Assistance-As-Needed techniques for auxiliary level planning
-  * Developing projection method for white-box training the GRU network
-  * Stability and linearization analysis of GRU and LSTM neural networks around equilibrium
+* Research Assistant @ Aalto University, **05/2025 -**
+  * Research Thesis: **Hierachical Inverse Model Predictive Control via Data-driven Stochastic Modeling**
+  * Achieve Imitation Learning by utilizing a bi-level structure combining optimal control and optimizatio
+  * Model cost functions by data-driven stochastic Model Predictive Control with receding horizon
+  * Supervised by [Prof. Shankar Deka](https://www.aalto.fi/en/people/shankar-dek)
+    
+* Research Assistant @ University of Illinois Urbana-Champaign, **06/2024 - 04/2025**
+  * Research Thesis: **Robotic Rehabilitation Therapy via Trajectory & Assistance Level Planning**
+  * Develop Conv@BiLSTM (1D-CNN + Attention + Bi-LSTM) architecture, patient classification accuracy improved by nearly 10% compared to other state-of-the-art models
+  * Use Inverse RL and Assistance-As-Needed techniques for auxiliary level planning
   * Supervised by [Prof. Dušan M. Stipanović](https://ise.illinois.edu/directory/profile/dusan)
 
 * Research Assistant @ Zhejiang University, **09/2023 - 12/2023**
-  * Integrate ChatPDF and ChatGPT to construct knowledge embedding between users and the LLM
-  * Construct website frame using React and Java script, achieving an interactable purpose to collect conversation data
-  * Supervised by [Prof. Meng Zhang](https://zjui.intl.zju.edu.cn/en/node/1651)
-
-* Data Analyst Intern @ Tellgen Corporation, **07/2023 - 08/2023**
-  * Achieve experimental data visualization through Python
-  * Construct classifier through algorithms such as K-Nearest Neighbor and K-Means Clustering to divide and co-analyze molecular meta data and further the infected cases
-  * Supervised by Mr. Xiaofeng Zhang
+  * Research Thesis: **Robotic Hand Feedback Control System via Haptic Sensing**
+  * Redesign knuckle and palm structures via Solidworks to accomodate haptic sensors and motors
+  * Construct a simulation environment based on Gazebo and ROS, facilitating hardware-software interface emulation
+  * Supervised by [Prof. Liangjing Yang](https://zjui.intl.zju.edu.cn/en/node/783)
   
 ⚙️Skills
 ======
 * Languages
-  * Python, Latex
-  * C, SQL, Julia
+  * Python, C++, Latex
 * English 
   * TOEFL: 107
-  * CET4: 681, CET6: 604
+  * CET4: 680, CET6: 604
 * Miscellaneous
-  * Github, PyTorch & Tenserflow
+  * PyTorch, Arduino
   * Fusion 360, Solidworks
-  * Adobe & Office toolset
 
  
 🔖Selective Awards
