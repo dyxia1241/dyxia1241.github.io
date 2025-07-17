@@ -21,7 +21,7 @@ repository               : "dyxia1241/dyxia1241.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "me_new.jpg"
+  avatar           : "me_new.png"
   name             : "Dayu Xia"
   pronouns         : "he/him"  
   bio              : "Mechanical Engineering @ ZJUI \n Prospective M.S. student @ 26 Fall"
