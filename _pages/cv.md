@@ -19,7 +19,7 @@ redirect_from:
 * High school diploma, Shanghai Jincai High School, **08/2019 - 07/2022**
   * **Rank**: 3% (*track: Gaokao*)
 * Selective Coursework
-  * Calculus, Differential Equations, Linear Algebra, Probability Theory, Numerical Analysis, Quantum Physics, Fluid Dynamics, Mechanical Design, Analog Circuits \& Systems, Signal Processing, Data Structures 
+  * Calculus, Differential Equations, Linear Algebra, Probability Theory, Numerical Analysis, Quantum Physics, Fluid Dynamics, Mechanical Design, Analog Circuits & Systems, Signal Processing, Data Structures 
  
 📜Publications
 ======
@@ -50,8 +50,8 @@ redirect_from:
 * Languages
   * Python, C++, Latex
 * English 
-  * TOEFL: 107
-  * CET4: 680, CET6: 604
+  * **TOEFL**: 107
+  * **CET4**: 680, **CET6**: 604
 * Miscellaneous
   * PyTorch, Arduino
   * Fusion 360, Solidworks
