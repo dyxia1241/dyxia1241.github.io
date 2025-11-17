@@ -11,11 +11,15 @@ redirect_from:
 
 🎓️Education
 ======
+* M.Eng. in Big Data Technology and Engineering, Tsinghua University, **09/2026 - 06/2028**
+  * Exam-Exempt Admission
+  * Supervised by Prof. Xiaobo Qu and Prof. Yang Liu
 * B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
   * **GPA**: 3.81/4.0, **Rank**: 6/56 
+  * Supervised by Prof. Liangjing Yang and Prof. Hua Chen
 * B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
   * **GPA**: 3.91/4.0
-  * Minor in Mathematics
+  * Supervised by Prof. Dušan M. Stipanović
 * High school diploma, Shanghai Jincai High School, **08/2019 - 07/2022**
   * **Rank**: 3% (*track: Gaokao*)
 * Selective Coursework
@@ -23,20 +27,19 @@ redirect_from:
  
 📜Publications
 ======
-* **D. Xia<sup>*</sup>**, **S. Annamraju<sup>*</sup>**, **H. Nisar<sup>*</sup>**, S. A. Deka, A. Horowitz, N. Milković, and D. M. Stipanović, [*"Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases"*](https://arxiv.org/pdf/2504.19230), submitted to [IEEE TNSRE](https://www.embs.org/tnsre/), under review.
+* **S. Annamraju<sup>*</sup>**, **H. Nisar<sup>*</sup>**, **D. Xia<sup>*</sup>**, S. A. Deka, A. Horowitz, N. Milković, and D. M. Stipanović, [*"Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases"*](https://arxiv.org/pdf/2504.19230), submitted to [International Journal of Social Robotics](https://link.springer.com/journal/12369), under review.
 
 💡Academic & Industrial experience
 ======
-* Research Assistant @ Aalto University, **05/2025 -**
-  * Research Thesis: **Hierachical Inverse Model Predictive Control via Data-driven Stochastic Modeling**
-  * Achieve Imitation Learning by utilizing a bi-level structure combining optimal control and optimizatio
-  * Model cost functions by data-driven stochastic Model Predictive Control with receding horizon
-  * Supervised by [Prof. Shankar Deka](https://www.aalto.fi/en/people/shankar-dek)
+* Algorithm Engineer Intern @ IM Motors, **08/2025 - 10/2025**
+  * Develop VLMs in autonomous driving
+  * Supervised by Dr. Wenbo Ding
     
 * Research Assistant @ University of Illinois Urbana-Champaign, **06/2024 - 04/2025**
   * Research Thesis: **Robotic Rehabilitation Therapy via Trajectory & Assistance Level Planning**
-  * Develop Conv@BiLSTM (1D-CNN + Attention + Bi-LSTM) architecture, patient classification accuracy improved by nearly 10% compared to other state-of-the-art models
-  * Use Inverse RL and Assistance-As-Needed techniques for auxiliary level planning
+  * Develop Conv@BiLSTM architecture, classification accuracy improved by 10%.
+  * Achieve Imitation Learning by utilizing a bi-level structure combining optimal control and optimization.
+  * Model cost functions by data-driven stochastic Model Predictive Control with receding horizon.
   * Supervised by [Prof. Dušan M. Stipanović](https://ise.illinois.edu/directory/profile/dusan)
 
 * Research Assistant @ Zhejiang University, **09/2023 - 12/2023**
@@ -47,19 +50,14 @@ redirect_from:
   
 ⚙️Skills
 ======
-* Languages
-  * Python, C++, Latex
-* English 
-  * **TOEFL**: 107
-  * **CET4**: 680, **CET6**: 604
-* Miscellaneous
-  * PyTorch, Arduino
-  * Fusion 360, Solidworks
+* Languages: Python, C++, Latex
+* English: **TOEFL**: 107, **CET4**: 680, **CET6**: 604
+* Miscellaneous: Isaac Lab, MuJoCo, PyTorch, Arduino, Fusion 360, Solidworks
 
  
 🔖Selective Awards
 ======
-* Provincial Scholarship (3%), Zhejiang Provincial Government, **09/2024**
+* Provincial Scholarship (3%), Zhejiang Provincial Government, **09/2024** & **09/2025**
 * Participant, HKUST Summer Camp for Elite Students (hosted by [Dept. of IEDA](https://ieda.ust.hk/eng/index.php)), **07/2024**
 * Silver Metal, China International College Students' Innovation Competition, **11/2023**
 * Second Prize, Zhejiang University Student Scholarship, **09/2023 & 2024**
