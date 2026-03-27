@@ -1,15 +1,19 @@
 ---
-layout: page
-title: About
+layout: null
 permalink: /
 ---
-
-<script>
-  window.location.replace('{{ "/about/" | relative_url }}');
-</script>
-
-<noscript>
-  <meta http-equiv="refresh" content="0;url={{ '/about/' | relative_url }}" />
-</noscript>
-
-<p>If you are not redirected automatically, <a href="{{ '/about/' | relative_url }}">go to About</a>.</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={{ '/about/' | relative_url }}">
+    <link rel="canonical" href="{{ '/about/' | absolute_url }}">
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="{{ '/about/' | relative_url }}">About</a>...</p>
+    <script>
+      window.location.replace('{{ "/about/" | relative_url }}');
+    </script>
+  </body>
+</html>
