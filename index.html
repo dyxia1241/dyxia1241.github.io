@@ -1,4 +1,15 @@
 ---
-layout: home
-# Index page
+layout: page
+title: About
+permalink: /
 ---
+
+<script>
+  window.location.replace('{{ "/about/" | relative_url }}');
+</script>
+
+<noscript>
+  <meta http-equiv="refresh" content="0;url={{ '/about/' | relative_url }}" />
+</noscript>
+
+<p>If you are not redirected automatically, <a href="{{ '/about/' | relative_url }}">go to About</a>.</p>
