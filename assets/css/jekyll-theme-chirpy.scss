@@ -1,0 +1,214 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap');
+
+/* ---------- Dayu UI Polish ---------- */
+
+:root {
+  --dy-accent: #0f766e;
+  --dy-accent-soft: #d1fae5;
+  --dy-ink: #1e293b;
+  --dy-paper: #fffdfa;
+  --dy-border: #e8dfcf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html:not([data-mode]),
+html[data-mode='light'] {
+  --main-bg: #fffdf9;
+  --text-color: #263238;
+  --heading-color: #152238;
+  --link-color: #0f766e;
+  --link-underline-color: #cde7e2;
+  --sidebar-bg: #f6f1e8;
+  --sidebar-border-color: #e8dfcf;
+  --sidebar-active-color: #0b3b39;
+  --sidebar-hover-bg: #efe7d8;
+  --sidebar-btn-bg: #fff8eb;
+  --topbar-bg: rgb(255 252 246 / 82%);
+  --card-bg: #fffefb;
+  --card-hover-bg: #f6efe2;
+  --card-shadow: rgb(15 23 42 / 6%) 0 8px 24px 0, rgb(15 23 42 / 8%) 0 0 0 1px;
+}
+
+html[data-mode='dark'] {
+  --main-bg: #111317;
+  --text-color: #d0d5dd;
+  --heading-color: #e8edf5;
+  --link-color: #6ee7d8;
+  --link-underline-color: #1f4c47;
+  --sidebar-bg: #171a1f;
+  --sidebar-border-color: #23272f;
+  --sidebar-active-color: #ffffff;
+  --sidebar-hover-bg: #222834;
+  --sidebar-btn-bg: #1e232b;
+  --topbar-bg: rgb(17 19 23 / 78%);
+  --card-bg: #171b22;
+  --card-hover-bg: #283140;
+  --card-shadow: rgb(0 0 0 / 45%) 0 10px 26px 0, rgb(255 255 255 / 6%) 0 0 0 1px;
+}
+
+body {
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 12%, rgb(15 118 110 / 8%), transparent 34%),
+    radial-gradient(circle at 84% 18%, rgb(245 158 11 / 9%), transparent 26%),
+    linear-gradient(180deg, rgb(255 255 255 / 0%), rgb(15 118 110 / 2%));
+}
+
+h1,
+h2,
+h3,
+h4,
+#sidebar .site-title,
+#topbar-title,
+.post-preview .card-title {
+  font-family: 'Fraunces', Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+#sidebar {
+  border-right: 1px solid var(--dy-border);
+}
+
+#sidebar .site-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#sidebar .site-subtitle {
+  font-size: 0.92rem;
+  opacity: 0.88;
+}
+
+#sidebar .nav-link {
+  border-radius: 0.85rem;
+  margin: 0.15rem 0.6rem;
+  padding: 0.55rem 0.8rem;
+  transition: all 0.22s ease;
+}
+
+#sidebar .nav-item.active .nav-link {
+  background: linear-gradient(135deg, rgb(15 118 110 / 13%), rgb(15 118 110 / 7%));
+  box-shadow: inset 0 0 0 1px rgb(15 118 110 / 28%);
+}
+
+#sidebar .nav-item.active .nav-link i {
+  color: var(--dy-accent);
+}
+
+#topbar-wrapper {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--dy-border);
+}
+
+#post-list .card-wrapper {
+  margin-bottom: 1rem;
+}
+
+.post-preview {
+  border-radius: 1.15rem;
+  overflow: hidden;
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.post-preview:hover {
+  transform: translateY(-4px);
+  box-shadow: rgb(15 23 42 / 11%) 0 14px 30px 0, rgb(15 23 42 / 10%) 0 0 0 1px;
+}
+
+.post-preview .card-title {
+  font-size: 1.35rem;
+}
+
+.post-preview .card-body {
+  padding: 1.3rem 1.4rem;
+}
+
+.post-preview .post-meta {
+  border-top: 1px dashed var(--dy-border);
+  padding-top: 0.8rem;
+}
+
+.pin {
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  background: rgb(15 118 110 / 9%);
+}
+
+.content h2 {
+  margin-top: 1.6rem;
+  padding-left: 0.62rem;
+  border-left: 4px solid var(--dy-accent);
+}
+
+.content a:hover {
+  text-decoration-thickness: 2px;
+}
+
+#search-input {
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 991.98px) {
+  #sidebar .site-title {
+    font-size: 1.35rem;
+  }
+
+  .post-preview .card-title {
+    font-size: 1.15rem;
+  }
+
+  .post-preview .card-body {
+    padding: 1rem 1rem 1.1rem;
+  }
+}
+
+@keyframes dy-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#post-list .card-wrapper {
+  opacity: 0;
+  animation: dy-rise 0.55s ease forwards;
+}
+
+#post-list .card-wrapper:nth-child(1) { animation-delay: 0.02s; }
+#post-list .card-wrapper:nth-child(2) { animation-delay: 0.06s; }
+#post-list .card-wrapper:nth-child(3) { animation-delay: 0.1s; }
+#post-list .card-wrapper:nth-child(4) { animation-delay: 0.14s; }
+#post-list .card-wrapper:nth-child(5) { animation-delay: 0.18s; }
+
+@media (prefers-reduced-motion: reduce) {
+  #post-list .card-wrapper {
+    opacity: 1;
+    animation: none;
+  }
+}

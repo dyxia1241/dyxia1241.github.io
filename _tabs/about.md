@@ -1,7 +1,7 @@
 ---
 title: About
 icon: fas fa-info-circle
-order: 6
+order: 1
 ---
 
 Hi there! I am Dayu Xia (夏大雨), a senior student majoring in Mechanical Engineering @ [ZJUI, Zhejiang University](https://zjui.intl.zju.edu.cn/en) and [Dept. of MechSE, University of Illinois Urbana-Champaign](https://mechse.illinois.edu/) through their joint degree program. I have the honor to be advised by Prof. Liangjing Yang, Prof. Hua Chen from ZJU, and [Prof. Dušan M. Stipanović](https://ise.illinois.edu/directory/profile/dusan) from UIUC.

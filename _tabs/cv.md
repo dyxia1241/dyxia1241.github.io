@@ -1,7 +1,7 @@
 ---
 title: CV
 icon: fas fa-file-lines
-order: 5
+order: 2
 ---
 
 ## Education
