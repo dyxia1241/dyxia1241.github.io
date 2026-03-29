@@ -8,13 +8,10 @@ order: 2
 
 - M.Eng. in Big Data Technology and Engineering, Tsinghua University, **09/2026 - 06/2028**
   - Exam-exempt admission
-  - Supervised by Prof. Xiaobo Qu and Prof. Yang Liu
 - B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
   - **GPA**: 3.81/4.0, **Rank**: 6/56
-  - Supervised by Prof. Liangjing Yang and Prof. Hua Chen
 - B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
   - **GPA**: 3.91/4.0
-  - Supervised by Prof. Dušan M. Stipanović
 - High school diploma, Shanghai Jincai High School, **08/2019 - 07/2022**
   - **Rank**: top 3% (Gaokao track)
 
@@ -29,21 +26,16 @@ Calculus, Differential Equations, Linear Algebra, Probability Theory, Numerical 
 ## Academic and Industrial Experience
 
 - Algorithm Engineer Intern @ IM Motors, **08/2025 - 10/2025**
-  - Developed VLMs in autonomous driving
-  - Supervised by Dr. Wenbo Ding
+  - Fine-tuning VLMs with real-road dara & data refilling
+  - Llama Factory & ROS2
 
 - Research Assistant @ University of Illinois Urbana-Champaign, **06/2024 - 04/2025**
-  - Research thesis: **Robotic Rehabilitation Therapy via Trajectory and Assistance Level Planning**
-  - Developed Conv@BiLSTM architecture with around 10% accuracy improvement
-  - Achieved imitation learning using a bi-level structure combining optimal control and optimization
-  - Modeled cost functions via data-driven stochastic MPC with receding horizon
-  - Supervised by [Prof. Dušan M. Stipanović](https://ise.illinois.edu/directory/profile/dusan)
+  - Medical robot time series classification & forecasting
+  - Pytorch & Transformer & LSTM
 
 - Research Assistant @ Zhejiang University, **09/2023 - 12/2023**
-  - Research thesis: **Robotic Hand Feedback Control System via Haptic Sensing**
-  - Redesigned knuckle and palm structures in SolidWorks to accommodate haptic sensors and motors
-  - Built a simulation environment based on Gazebo and ROS
-  - Supervised by [Prof. Liangjing Yang](https://zjui.intl.zju.edu.cn/en/node/783)
+  - Dexterous hand design & simulation
+  - ROS2 & Gazebo & Solidworks
 
 ## Skills
 
