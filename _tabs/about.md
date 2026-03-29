@@ -10,6 +10,4 @@ Hi there! I am Dayu Xia (夏大雨), a senior student majoring in mechanical eng
 
 My research interests include VLM and VLA in embodied-AI. I am especially interested in building efficient and safe end-to-end systems for robots and autonomous vehicles.
 
-Check out my [CV](/cv/) for more details.
-
 I was born and raised in Shanghai, China. I enjoy traveling and photography.
