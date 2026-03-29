@@ -7,17 +7,9 @@ order: 2
 ## Education
 
 - M.Eng. in Big Data Technology and Engineering, Tsinghua University, **09/2026 - 06/2028**
-  - Exam-exempt admission
 - B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
-  - **GPA**: 3.81/4.0, **Rank**: 6/56
 - B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
-  - **GPA**: 3.91/4.0
 - High school diploma, Shanghai Jincai High School, **08/2019 - 07/2022**
-  - **Rank**: top 3% (Gaokao track)
-
-### Selective Coursework
-
-Calculus, Differential Equations, Linear Algebra, Probability Theory, Numerical Analysis, Quantum Physics, Fluid Dynamics, Mechanical Design, Analog Circuits and Systems, Signal Processing, Data Structures.
 
 ## Publications
 
