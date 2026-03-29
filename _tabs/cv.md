@@ -43,24 +43,4 @@ Calculus, Differential Equations, Linear Algebra, Probability Theory, Numerical 
 - English: **TOEFL** 107, **CET4** 680, **CET6** 604
 - Miscellaneous: Isaac Lab, MuJoCo, PyTorch, Arduino, Fusion 360, SolidWorks
 
-## Selective Awards
-
-- Provincial Scholarship (top 3%), Zhejiang Provincial Government, **09/2024** and **09/2025**
-- Participant, HKUST Summer Camp for Elite Students (Dept. of IEDA), **07/2024**
-- Silver Medal, China International College Students' Innovation Competition, **11/2023**
-- Second Prize, Zhejiang University Student Scholarship, **09/2023** and **09/2024**
-- First Prize, Zhejiang University Student Winter Vacation Social Practice, **05/2023**
-- Honorable Mention, Mathematical Contest in Modeling, **02/2023**
-- Second Prize, The Chinese Mathematics Competitions, **11/2022**
-
-## Projects
-
-- [Integrated report: Multi-dimensional Comparison Report Between Chengdu and Hangzhou](/files/Report_Chengdu%26Hangzhou.pdf), **05/2023**
-  - Field inspections and interviews used to compare two semi-tier-one cities in China
-  - Awarded **First Prize** in Zhejiang University Student Winter Vacation Social Practice (2023)
-
-- [Integrated report: Prediction and Analysis of the Wordle Game](/files/Wordle%20Game%20Prediction.pdf), **02/2023**
-  - Built a human-like Wordle solver and analyzed difficulty distribution
-  - Awarded **Honorable Mention** in Mathematical Contest in Modeling (2023)
-
 You can also download my full CV PDF: [CV_Eng.pdf](/files/CV_Eng.pdf)
