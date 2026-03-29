@@ -16,4 +16,4 @@ bundle install
 bundle exec jekyll s
 ```
 
-The site will be available at `http://127.0.0.1:4000`.
+The site will be available at `dyxia1241.github.io`.
