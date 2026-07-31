@@ -24,15 +24,18 @@ permalink: /
     >
     <style>
       :root {
-        --bg: #f7f7f4;
+        --bg: #f5f7f8;
         --paper: #ffffff;
-        --ink: #20272b;
-        --muted: #5d686d;
-        --line: #dce1df;
-        --accent: #0d5c63;
-        --accent-warm: #8b3d2e;
-        --soft: #eef3f1;
-        --shadow: 0 18px 44px rgba(32, 39, 43, 0.08);
+        --paper-muted: #f9fbfb;
+        --ink: #172126;
+        --muted: #5a6870;
+        --line: #d7e1e4;
+        --accent: #08736f;
+        --accent-strong: #064f59;
+        --accent-alt: #4756a6;
+        --soft: #edf7f6;
+        --soft-alt: #f0f2fb;
+        --shadow: 0 18px 46px rgba(23, 33, 38, 0.09);
         --font-sans: "Source Sans 3", Aptos, "SF Pro Text", "Segoe UI", "PingFang SC",
           "Microsoft YaHei", sans-serif;
         --font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype",
@@ -50,7 +53,8 @@ permalink: /
 
       body {
         margin: 0;
-        background: var(--bg);
+        background:
+          linear-gradient(180deg, #fbfcfd 0, var(--bg) 360px, #eef5f4 100%);
         color: var(--ink);
         font-family: var(--font-sans);
         font-size: 16px;
@@ -66,7 +70,7 @@ permalink: /
       }
 
       a:hover {
-        color: var(--accent-warm);
+        color: var(--accent-alt);
       }
 
       .shell {
@@ -78,9 +82,9 @@ permalink: /
         position: sticky;
         top: 0;
         z-index: 10;
-        border-bottom: 1px solid rgba(220, 225, 223, 0.86);
-        background: rgba(247, 247, 244, 0.93);
-        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(215, 225, 228, 0.88);
+        background: rgba(251, 252, 253, 0.9);
+        backdrop-filter: blur(18px);
       }
 
       .nav {
@@ -116,6 +120,7 @@ permalink: /
         justify-content: flex-end;
         gap: 8px 16px;
         font-size: 14px;
+        font-weight: 650;
       }
 
       .links a {
@@ -124,24 +129,24 @@ permalink: /
       }
 
       .links a:hover {
-        color: var(--ink);
+        color: var(--accent-strong);
       }
 
       main {
-        padding: 56px 0 72px;
+        padding: 64px 0 80px;
       }
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 310px;
-        gap: 56px;
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 64px;
         align-items: center;
-        padding: 24px 0 54px;
+        padding: 28px 0 64px;
       }
 
       .eyebrow {
-        margin: 0 0 14px;
-        color: var(--accent-warm);
+        margin: 0 0 16px;
+        color: var(--accent-alt);
         font-size: 13px;
         font-weight: 700;
         letter-spacing: 0;
@@ -158,7 +163,8 @@ permalink: /
 
       h1 {
         margin: 0;
-        font-size: clamp(42px, 7vw, 76px);
+        color: #111a1f;
+        font-size: 74px;
         font-weight: 700;
       }
 
@@ -167,14 +173,14 @@ permalink: /
         margin-top: 6px;
         color: var(--muted);
         font-family: var(--font-cjk-serif);
-        font-size: clamp(24px, 3.4vw, 34px);
+        font-size: 32px;
         font-weight: 500;
       }
 
       .lead {
         max-width: 730px;
         margin: 26px 0 0;
-        color: #3d474b;
+        color: #354247;
         font-size: 20px;
         line-height: 1.65;
       }
@@ -192,17 +198,32 @@ permalink: /
         min-height: 42px;
         border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 8px 14px;
+        padding: 8px 15px;
         background: var(--paper);
         color: var(--ink);
         font-size: 14px;
         font-weight: 700;
         text-decoration: none;
+        box-shadow: 0 6px 18px rgba(23, 33, 38, 0.04);
+        transition: border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+      }
+
+      .button:hover {
+        border-color: #b7c7cc;
+        color: var(--accent-strong);
+        transform: translateY(-1px);
       }
 
       .button.primary {
         border-color: var(--accent);
         background: var(--accent);
+        color: #ffffff;
+        box-shadow: 0 10px 24px rgba(8, 115, 111, 0.18);
+      }
+
+      .button.primary:hover {
+        border-color: var(--accent-strong);
+        background: var(--accent-strong);
         color: #ffffff;
       }
 
@@ -210,12 +231,12 @@ permalink: /
         align-self: stretch;
         display: grid;
         align-content: end;
-        min-height: 420px;
+        min-height: 430px;
         border: 1px solid var(--line);
         border-radius: 8px;
         overflow: hidden;
         background:
-          linear-gradient(180deg, rgba(255, 255, 255, 0) 44%, rgba(32, 39, 43, 0.8) 100%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgba(12, 26, 31, 0.84) 100%),
           url("{{ '/images/me_new.png' | relative_url }}");
         background-position: center top;
         background-size: cover;
@@ -241,15 +262,16 @@ permalink: /
 
       .section {
         display: grid;
-        grid-template-columns: 220px minmax(0, 1fr);
-        gap: 48px;
-        padding: 44px 0;
+        grid-template-columns: 210px minmax(0, 1fr);
+        gap: 54px;
+        padding: 52px 0;
         border-top: 1px solid var(--line);
       }
 
       .section h2 {
         margin: 0;
-        font-size: 19px;
+        color: #111a1f;
+        font-size: 21px;
       }
 
       .section-kicker {
@@ -261,7 +283,12 @@ permalink: /
 
       .entry-list {
         display: grid;
-        gap: 18px;
+        gap: 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--paper);
+        box-shadow: 0 12px 34px rgba(23, 33, 38, 0.05);
       }
 
       .entry {
@@ -270,12 +297,11 @@ permalink: /
         gap: 24px;
         align-items: start;
         border-bottom: 1px solid var(--line);
-        padding-bottom: 18px;
+        padding: 22px;
       }
 
       .entry:last-child {
         border-bottom: 0;
-        padding-bottom: 0;
       }
 
       .entry h3 {
@@ -298,7 +324,7 @@ permalink: /
         height: 46px;
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: #ffffff;
+        background: linear-gradient(180deg, #ffffff, var(--paper-muted));
       }
 
       .affiliation-logo img {
@@ -315,7 +341,7 @@ permalink: /
 
       .date {
         justify-self: end;
-        color: var(--accent-warm);
+        color: var(--accent-alt);
         font-size: 14px;
         font-weight: 700;
         white-space: nowrap;
@@ -334,8 +360,9 @@ permalink: /
       .publication {
         border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 22px;
+        padding: 24px;
         background: var(--paper);
+        box-shadow: 0 12px 34px rgba(23, 33, 38, 0.05);
       }
 
       .publication h3 {
@@ -351,24 +378,39 @@ permalink: /
 
       .publication .meta {
         margin-top: 12px;
-        color: #394348;
+        color: #354247;
         font-size: 14px;
       }
 
       .project-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
+        gap: 16px;
       }
 
       .project-card {
+        position: relative;
         display: flex;
         flex-direction: column;
         min-height: 220px;
         border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 20px;
+        padding: 22px;
         background: var(--paper);
+        box-shadow: 0 12px 34px rgba(23, 33, 38, 0.05);
+      }
+
+      .project-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 3px;
+        border-radius: 8px 0 0 8px;
+        background: var(--accent);
+      }
+
+      .project-card:nth-child(even)::before {
+        background: var(--accent-alt);
       }
 
       .project-card h3 {
@@ -405,13 +447,19 @@ permalink: /
         display: inline-flex;
         align-items: center;
         min-height: 28px;
-        border: 1px solid #ccd5d2;
+        border: 1px solid #c8d9d7;
         border-radius: 999px;
         padding: 3px 10px;
         background: var(--soft);
-        color: #315156;
+        color: var(--accent-strong);
         font-size: 13px;
         font-weight: 600;
+      }
+
+      .project-card:nth-child(even) .tag {
+        border-color: #d1d5ef;
+        background: var(--soft-alt);
+        color: #394785;
       }
 
       .footer {
@@ -439,6 +487,15 @@ permalink: /
 
         .section {
           gap: 22px;
+          padding: 40px 0;
+        }
+
+        h1 {
+          font-size: 62px;
+        }
+
+        h1 .cn {
+          font-size: 29px;
         }
       }
 
@@ -465,6 +522,14 @@ permalink: /
 
         .lead {
           font-size: 18px;
+        }
+
+        h1 {
+          font-size: 46px;
+        }
+
+        h1 .cn {
+          font-size: 25px;
         }
 
         .entry {
