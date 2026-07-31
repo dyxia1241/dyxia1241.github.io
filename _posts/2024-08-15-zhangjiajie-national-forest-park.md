@@ -1,7 +1,7 @@
 ---
 title: "Zhangjiajie National Forest Park"
 date: 2024-08-15 10:00:00 +0800
-categories: [portfolio]
+categories: [travel]
 tags: [travel, photography, china]
 image:
   path: /images/ZJJ.jpg

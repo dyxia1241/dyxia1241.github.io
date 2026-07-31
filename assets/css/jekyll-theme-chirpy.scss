@@ -8,7 +8,7 @@
 {%- endif -%}
 ';
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600&family=Source+Sans+3:ital,wght@0,400..800;1,400..800&family=Source+Serif+4:opsz,wght@8..60,500..800&display=swap');
 
 /* ---------- Dayu UI Polish ---------- */
 
@@ -18,6 +18,10 @@
   --dy-ink: #1e293b;
   --dy-paper: #fffdfa;
   --dy-border: #e8dfcf;
+  --dy-font-sans: 'Source Sans 3', Aptos, 'SF Pro Text', 'Segoe UI', 'PingFang SC',
+    'Microsoft YaHei', sans-serif;
+  --dy-font-serif: 'Source Serif 4', 'Iowan Old Style', 'Palatino Linotype',
+    'Noto Serif SC', 'Songti SC', Georgia, serif;
 }
 
 html {
@@ -60,8 +64,10 @@ html[data-mode='dark'] {
 }
 
 body {
-  font-family: 'Manrope', 'Segoe UI', sans-serif;
-  letter-spacing: 0.01em;
+  font-family: var(--dy-font-sans);
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body::before {
@@ -83,8 +89,8 @@ h4,
 #sidebar .site-title,
 #topbar-title,
 .post-preview .card-title {
-  font-family: 'Fraunces', Georgia, serif;
-  letter-spacing: 0.01em;
+  font-family: var(--dy-font-serif);
+  letter-spacing: 0;
 }
 
 #sidebar {
@@ -164,6 +170,18 @@ h4,
 
 .content a:hover {
   text-decoration-thickness: 2px;
+}
+
+.affiliation-inline-logo {
+  width: 1.45rem;
+  height: 1.45rem;
+  margin-right: 0.42rem;
+  padding: 0.14rem;
+  border: 1px solid var(--dy-border);
+  border-radius: 0.35rem;
+  background: #ffffff;
+  object-fit: contain;
+  vertical-align: -0.38rem;
 }
 
 #search-input {

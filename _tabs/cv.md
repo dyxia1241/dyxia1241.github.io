@@ -6,9 +6,9 @@ order: 2
 
 ## Education
 
-- M.Eng. in Big Data Technology and Engineering, Tsinghua University, **09/2026 - 06/2028**
-- B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
-- B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
+- <img class="affiliation-inline-logo" src="/images/affiliations/tsinghua.png" alt="Tsinghua University logo"> M.Eng. in Big Data Technology and Engineering, Tsinghua University, **09/2026 - 06/2028**
+- <img class="affiliation-inline-logo" src="/images/affiliations/zju.png" alt="Zhejiang University logo"> B.Eng. in Mechanical Engineering, Zhejiang University, **09/2022 - 06/2026**
+- <img class="affiliation-inline-logo" src="/images/affiliations/uiuc.svg" alt="University of Illinois Urbana-Champaign logo"> B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign, **09/2022 - 06/2026**
 - High school diploma, Shanghai Jincai High School, **08/2019 - 07/2022**
 
 ## Publications
@@ -17,17 +17,17 @@ order: 2
 
 ## Academic and Industrial Experience
 
-- Algorithm Engineer Intern @ IM Motors, **08/2025 - 10/2025**
-  - Fine-tuning VLMs with real-road dara & data refilling
+- <img class="affiliation-inline-logo" src="/images/affiliations/im-motors.svg" alt="IM Motors logo"> Algorithm Engineer Intern @ IM Motors, **08/2025 - 10/2025**
+  - Fine-tuning VLMs with real-road data & data refilling
   - Llama Factory & ROS2
 
-- Research Assistant @ University of Illinois Urbana-Champaign, **06/2024 - 04/2025**
-  - Medical robot time series classification & forecasting
-  - Pytorch & Transformer & LSTM
+- <img class="affiliation-inline-logo" src="/images/affiliations/uiuc.svg" alt="University of Illinois Urbana-Champaign logo"> Research Assistant @ University of Illinois Urbana-Champaign, **06/2024 - 04/2025**
+  - Medical robot time-series classification & forecasting
+  - PyTorch & Transformer & LSTM
 
-- Research Assistant @ Zhejiang University, **09/2023 - 12/2023**
+- <img class="affiliation-inline-logo" src="/images/affiliations/zju.png" alt="Zhejiang University logo"> Research Assistant @ Zhejiang University, **09/2023 - 12/2023**
   - Dexterous hand design & simulation
-  - ROS2 & Gazebo & Solidworks
+  - ROS2 & Gazebo & SolidWorks
 
 ## Skills
 

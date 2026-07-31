@@ -10,6 +10,18 @@ permalink: /
     <meta name="description" content="{{ site.description | strip | escape }}">
     <title>{{ site.title | escape }} - Academic Homepage</title>
     <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <meta property="og:title" content="{{ site.title | escape }} - Academic Homepage">
+    <meta property="og:description" content="{{ site.description | strip | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ '/' | absolute_url }}">
+    <meta property="og:image" content="{{ site.social_preview_image | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600&amp;family=Source+Sans+3:ital,wght@0,400..800;1,400..800&amp;family=Source+Serif+4:opsz,wght@8..60,500..800&amp;display=swap"
+      rel="stylesheet"
+    >
     <style>
       :root {
         --bg: #f7f7f4;
@@ -21,6 +33,11 @@ permalink: /
         --accent-warm: #8b3d2e;
         --soft: #eef3f1;
         --shadow: 0 18px 44px rgba(32, 39, 43, 0.08);
+        --font-sans: "Source Sans 3", Aptos, "SF Pro Text", "Segoe UI", "PingFang SC",
+          "Microsoft YaHei", sans-serif;
+        --font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype",
+          "Noto Serif SC", "Songti SC", Georgia, serif;
+        --font-cjk-serif: "Noto Serif SC", "Source Serif 4", "Songti SC", STSong, serif;
       }
 
       * {
@@ -35,11 +52,11 @@ permalink: /
         margin: 0;
         background: var(--bg);
         color: var(--ink);
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", sans-serif;
+        font-family: var(--font-sans);
         font-size: 16px;
         line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
       }
 
       a {
@@ -85,7 +102,7 @@ permalink: /
 
       .brand strong {
         font-size: 17px;
-        font-weight: 750;
+        font-weight: 700;
       }
 
       .brand span {
@@ -97,7 +114,7 @@ permalink: /
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 8px 18px;
+        gap: 8px 16px;
         font-size: 14px;
       }
 
@@ -126,7 +143,7 @@ permalink: /
         margin: 0 0 14px;
         color: var(--accent-warm);
         font-size: 13px;
-        font-weight: 760;
+        font-weight: 700;
         letter-spacing: 0;
         text-transform: uppercase;
       }
@@ -134,6 +151,7 @@ permalink: /
       h1,
       h2,
       h3 {
+        font-family: var(--font-serif);
         line-height: 1.18;
         letter-spacing: 0;
       }
@@ -141,13 +159,14 @@ permalink: /
       h1 {
         margin: 0;
         font-size: clamp(42px, 7vw, 76px);
-        font-weight: 780;
+        font-weight: 700;
       }
 
       h1 .cn {
         display: block;
         margin-top: 6px;
         color: var(--muted);
+        font-family: var(--font-cjk-serif);
         font-size: clamp(24px, 3.4vw, 34px);
         font-weight: 500;
       }
@@ -177,7 +196,7 @@ permalink: /
         background: var(--paper);
         color: var(--ink);
         font-size: 14px;
-        font-weight: 680;
+        font-weight: 700;
         text-decoration: none;
       }
 
@@ -264,6 +283,31 @@ permalink: /
         font-size: 18px;
       }
 
+      .entry-heading {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+      }
+
+      .affiliation-logo {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      .affiliation-logo img {
+        display: block;
+        width: 34px;
+        height: 34px;
+        object-fit: contain;
+      }
+
       .entry p {
         margin: 7px 0 0;
         color: var(--muted);
@@ -273,7 +317,7 @@ permalink: /
         justify-self: end;
         color: var(--accent-warm);
         font-size: 14px;
-        font-weight: 760;
+        font-weight: 700;
         white-space: nowrap;
       }
 
@@ -311,6 +355,45 @@ permalink: /
         font-size: 14px;
       }
 
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .project-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 20px;
+        background: var(--paper);
+      }
+
+      .project-card h3 {
+        margin: 0;
+        font-size: 19px;
+      }
+
+      .project-card p {
+        margin: 10px 0 0;
+        color: var(--muted);
+      }
+
+      .project-meta {
+        margin-top: auto;
+      }
+
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        margin-top: 14px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
       .tag-row {
         display: flex;
         flex-wrap: wrap;
@@ -328,7 +411,7 @@ permalink: /
         background: var(--soft);
         color: #315156;
         font-size: 13px;
-        font-weight: 650;
+        font-weight: 600;
       }
 
       .footer {
@@ -393,6 +476,10 @@ permalink: /
           justify-self: start;
           order: -1;
         }
+
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -406,7 +493,10 @@ permalink: /
         <nav class="links" aria-label="Primary">
           <a href="#education">Education</a>
           <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
           <a href="#publication">Publication</a>
+          <a href="{{ '/cv/' | relative_url }}">CV</a>
+          <a href="{{ '/blogs/' | relative_url }}">Blog</a>
         </nav>
       </div>
     </header>
@@ -447,21 +537,48 @@ permalink: /
         <div class="entry-list">
           <article class="entry">
             <div>
-              <h3>M.Eng. in Big Data Technology and Engineering</h3>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/tsinghua.png' | relative_url }}"
+                    alt="Tsinghua University logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>M.Eng. in Big Data Technology and Engineering</h3>
+              </div>
               <p>Tsinghua University</p>
             </div>
             <div class="date">09/2026 - 06/2028</div>
           </article>
           <article class="entry">
             <div>
-              <h3>B.Eng. in Mechanical Engineering</h3>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/zju.png' | relative_url }}"
+                    alt="Zhejiang University logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>B.Eng. in Mechanical Engineering</h3>
+              </div>
               <p>Zhejiang University</p>
             </div>
             <div class="date">09/2022 - 06/2026</div>
           </article>
           <article class="entry">
             <div>
-              <h3>B.S. in Mechanical Engineering</h3>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/uiuc.svg' | relative_url }}"
+                    alt="University of Illinois Urbana-Champaign logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>B.S. in Mechanical Engineering</h3>
+              </div>
               <p>University of Illinois Urbana-Champaign</p>
             </div>
             <div class="date">09/2022 - 06/2026</div>
@@ -477,7 +594,16 @@ permalink: /
         <div class="entry-list">
           <article class="entry">
             <div>
-              <h3>Algorithm Engineer Intern</h3>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/im-motors.svg' | relative_url }}"
+                    alt="IM Motors logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>Algorithm Engineer Intern</h3>
+              </div>
               <p>IM Motors, joint autonomous driving center</p>
               <ul class="detail-list">
                 <li>Fine-tuning VLMs with real-road data and data refilling.</li>
@@ -488,7 +614,16 @@ permalink: /
           </article>
           <article class="entry">
             <div>
-              <h3>Research Assistant</h3>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/uiuc.svg' | relative_url }}"
+                    alt="University of Illinois Urbana-Champaign logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>Research Assistant</h3>
+              </div>
               <p>University of Illinois Urbana-Champaign</p>
               <ul class="detail-list">
                 <li>Medical robot time-series classification and forecasting.</li>
@@ -499,7 +634,16 @@ permalink: /
           </article>
           <article class="entry">
             <div>
-              <h3>Research Assistant</h3>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/zju.png' | relative_url }}"
+                    alt="Zhejiang University logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>Research Assistant</h3>
+              </div>
               <p>Zhejiang University</p>
               <ul class="detail-list">
                 <li>Dexterous hand design and simulation.</li>
@@ -507,6 +651,74 @@ permalink: /
               </ul>
             </div>
             <div class="date">09/2023 - 12/2023</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div>
+          <h2 id="projects-title">Selected Projects</h2>
+          <p class="section-kicker">Robotics, embodied AI, and learning systems.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Robotic Trail Maker Platform</h3>
+            <p>
+              Clinical robotics work for rehabilitation use cases, focused on translating a robotic
+              platform into concrete neurological-condition workflows.
+            </p>
+            <div class="project-meta">
+              <div class="tag-row" aria-label="Project topics">
+                <span class="tag">Medical robotics</span>
+                <span class="tag">HRI</span>
+                <span class="tag">Clinical use cases</span>
+              </div>
+              <div class="project-links">
+                <a href="https://arxiv.org/pdf/2504.19230">PDF</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>VLM Data Refilling for Autonomous Driving</h3>
+            <p>
+              Fine-tuning and data-refilling workflow for vision-language models using real-road
+              data in an autonomous driving context.
+            </p>
+            <div class="project-meta">
+              <div class="tag-row" aria-label="Project topics">
+                <span class="tag">VLM</span>
+                <span class="tag">Llama Factory</span>
+                <span class="tag">ROS2</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Medical Robot Time-Series Forecasting</h3>
+            <p>
+              Classification and forecasting pipeline for medical robot time-series data using deep
+              sequence models.
+            </p>
+            <div class="project-meta">
+              <div class="tag-row" aria-label="Project topics">
+                <span class="tag">PyTorch</span>
+                <span class="tag">Transformer</span>
+                <span class="tag">LSTM</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Dexterous Hand Design and Simulation</h3>
+            <p>
+              Mechanical design and simulation work for a dexterous robotic hand, spanning CAD,
+              ROS2, and Gazebo experiments.
+            </p>
+            <div class="project-meta">
+              <div class="tag-row" aria-label="Project topics">
+                <span class="tag">ROS2</span>
+                <span class="tag">Gazebo</span>
+                <span class="tag">SolidWorks</span>
+              </div>
+            </div>
           </article>
         </div>
       </section>

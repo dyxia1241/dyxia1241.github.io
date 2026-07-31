@@ -1,7 +1,7 @@
 ---
 title: "Griffith Observatory"
 date: 2024-08-16 10:00:00 +0800
-categories: [portfolio]
+categories: [travel]
 tags: [travel, photography, usa]
 image:
   path: /images/LA.jpg

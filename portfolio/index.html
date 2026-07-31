@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /portfolio/
+---
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url={{ '/travel/' | relative_url }}">
+    <link rel="canonical" href="{{ '/travel/' | absolute_url }}">
+    <title>Redirecting to Travel</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="{{ '/travel/' | relative_url }}">Travel</a>...</p>
+    <script>
+      window.location.replace('{{ "/travel/" | relative_url }}');
+    </script>
+  </body>
+</html>
