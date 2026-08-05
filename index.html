@@ -74,7 +74,7 @@ permalink: /
       }
 
       .shell {
-        width: min(1080px, calc(100% - 40px));
+        width: min(1120px, calc(100% - 48px));
         margin: 0 auto;
       }
 
@@ -133,15 +133,15 @@ permalink: /
       }
 
       main {
-        padding: 64px 0 80px;
+        padding: 60px 0 80px;
       }
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 320px;
-        gap: 64px;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
+        gap: 60px;
         align-items: center;
-        padding: 28px 0 64px;
+        padding: 24px 0 60px;
       }
 
       .eyebrow {
@@ -231,7 +231,7 @@ permalink: /
         align-self: stretch;
         display: grid;
         align-content: end;
-        min-height: 430px;
+        min-height: 440px;
         border: 1px solid var(--line);
         border-radius: 8px;
         overflow: hidden;
@@ -262,9 +262,9 @@ permalink: /
 
       .section {
         display: grid;
-        grid-template-columns: 210px minmax(0, 1fr);
-        gap: 54px;
-        padding: 52px 0;
+        grid-template-columns: 170px minmax(0, 1fr);
+        gap: 44px;
+        padding: 48px 0;
         border-top: 1px solid var(--line);
       }
 
@@ -293,7 +293,7 @@ permalink: /
 
       .entry {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 148px;
+        grid-template-columns: minmax(0, 1fr) minmax(138px, max-content);
         gap: 24px;
         align-items: start;
         border-bottom: 1px solid var(--line);
@@ -307,11 +307,12 @@ permalink: /
       .entry h3 {
         margin: 0;
         font-size: 18px;
+        line-height: 1.25;
       }
 
       .entry-heading {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 13px;
       }
 
@@ -385,6 +386,7 @@ permalink: /
       .project-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
         gap: 16px;
       }
 
@@ -392,7 +394,7 @@ permalink: /
         position: relative;
         display: flex;
         flex-direction: column;
-        min-height: 220px;
+        min-height: 230px;
         border: 1px solid var(--line);
         border-radius: 8px;
         padding: 22px;
@@ -415,7 +417,9 @@ permalink: /
 
       .project-card h3 {
         margin: 0;
+        min-height: 2.45em;
         font-size: 19px;
+        line-height: 1.22;
       }
 
       .project-card p {
@@ -469,25 +473,19 @@ permalink: /
         font-size: 14px;
       }
 
-      @media (max-width: 860px) {
-        .hero,
-        .section {
+      @media (max-width: 960px) {
+        .hero {
           grid-template-columns: 1fr;
         }
 
         .hero {
-          gap: 28px;
+          gap: 30px;
           padding-top: 10px;
         }
 
         .portrait {
-          min-height: 360px;
-          max-width: 520px;
-        }
-
-        .section {
-          gap: 22px;
-          padding: 40px 0;
+          min-height: 420px;
+          max-width: 560px;
         }
 
         h1 {
@@ -499,9 +497,17 @@ permalink: /
         }
       }
 
+      @media (max-width: 860px) {
+        .section {
+          grid-template-columns: 1fr;
+          gap: 22px;
+          padding: 40px 0;
+        }
+      }
+
       @media (max-width: 640px) {
         .shell {
-          width: min(100% - 28px, 1080px);
+          width: min(100% - 28px, 1120px);
         }
 
         .nav {
@@ -520,6 +526,14 @@ permalink: /
           padding-top: 28px;
         }
 
+        .hero {
+          padding-bottom: 52px;
+        }
+
+        .portrait {
+          min-height: 360px;
+        }
+
         .lead {
           font-size: 18px;
         }
@@ -535,15 +549,44 @@ permalink: /
         .entry {
           grid-template-columns: 1fr;
           gap: 4px;
+          padding: 20px 18px;
         }
 
         .date {
           justify-self: start;
           order: -1;
+          margin-bottom: 6px;
+          font-size: 13px;
+        }
+
+        .entry-heading {
+          gap: 12px;
+        }
+
+        .entry h3 {
+          font-size: 17px;
+        }
+
+        .affiliation-logo {
+          width: 42px;
+          height: 42px;
+        }
+
+        .affiliation-logo img {
+          width: 30px;
+          height: 30px;
         }
 
         .project-grid {
           grid-template-columns: 1fr;
+        }
+
+        .project-card {
+          min-height: auto;
+        }
+
+        .project-card h3 {
+          min-height: 0;
         }
       }
     </style>
