@@ -138,10 +138,13 @@ permalink: /
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
-        gap: 60px;
-        align-items: center;
-        padding: 24px 0 60px;
+        place-items: center;
+        padding: 42px 0 76px;
+      }
+
+      .hero-content {
+        max-width: 820px;
+        text-align: center;
       }
 
       .eyebrow {
@@ -178,8 +181,8 @@ permalink: /
       }
 
       .lead {
-        max-width: 730px;
-        margin: 26px 0 0;
+        max-width: 760px;
+        margin: 26px auto 0;
         color: #354247;
         font-size: 20px;
         line-height: 1.65;
@@ -188,6 +191,7 @@ permalink: /
       .hero-actions {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
         margin-top: 30px;
       }
@@ -225,39 +229,6 @@ permalink: /
         border-color: var(--accent-strong);
         background: var(--accent-strong);
         color: #ffffff;
-      }
-
-      .portrait {
-        align-self: stretch;
-        display: grid;
-        align-content: end;
-        min-height: 440px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        overflow: hidden;
-        background:
-          linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgba(12, 26, 31, 0.84) 100%),
-          url("{{ '/images/me_new.png' | relative_url }}");
-        background-position: center top;
-        background-size: cover;
-        box-shadow: var(--shadow);
-      }
-
-      .portrait-caption {
-        padding: 22px;
-        color: #ffffff;
-      }
-
-      .portrait-caption strong {
-        display: block;
-        font-size: 17px;
-      }
-
-      .portrait-caption span {
-        display: block;
-        margin-top: 4px;
-        color: rgba(255, 255, 255, 0.82);
-        font-size: 14px;
       }
 
       .section {
@@ -475,17 +446,7 @@ permalink: /
 
       @media (max-width: 960px) {
         .hero {
-          grid-template-columns: 1fr;
-        }
-
-        .hero {
-          gap: 30px;
           padding-top: 10px;
-        }
-
-        .portrait {
-          min-height: 420px;
-          max-width: 560px;
         }
 
         h1 {
@@ -528,10 +489,6 @@ permalink: /
 
         .hero {
           padding-bottom: 52px;
-        }
-
-        .portrait {
-          min-height: 360px;
         }
 
         .lead {
@@ -611,7 +568,7 @@ permalink: /
 
     <main id="top" class="shell">
       <section class="hero" aria-labelledby="hero-title">
-        <div>
+        <div class="hero-content">
           <p class="eyebrow">Academic homepage</p>
           <h1 id="hero-title">
             Dayu Xia
@@ -628,13 +585,6 @@ permalink: /
             <a class="button" href="https://github.com/{{ site.github.username }}">GitHub</a>
           </div>
         </div>
-
-        <aside class="portrait" aria-label="Portrait">
-          <div class="portrait-caption">
-            <strong>Zhejiang University / UIUC</strong>
-            <span>Mechanical Engineering, joint degree program</span>
-          </div>
-        </aside>
       </section>
 
       <section id="education" class="section" aria-labelledby="education-title">
