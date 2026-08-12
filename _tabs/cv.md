@@ -18,13 +18,13 @@ order: 2
 
 ## Internship Experience
 
-- <img class="affiliation-inline-logo shlab-inline-logo" src="/images/affiliations/shlab.png" alt="Shanghai AI Laboratory logo"> Shanghai AI Laboratory | Supervised by Prof. Yao Mu and Dr. Yue Shi, **2026.03 - 2026.08**
+- <img class="affiliation-inline-logo internship-inline-logo" src="/images/affiliations/shlab.png" alt="Shanghai AI Laboratory logo"> Shanghai AI Laboratory | Supervised by Prof. Yao Mu and Dr. Yue Shi, **2026.03 - 2026.08**
   - Research Intern on VLAs/WAMs for embodied manipulation
   - Benchmark fine-grained process understanding of VLMs via scaleable manipulative primitive segmentation.
   - Finetune π0, π0.5 using tele-operated data via openpi and implement policies on ARX-AC 2 in real world.
   - Couple a progress expert based on Fast-WAM to jointly model video, action and progress.
 
-- <img class="affiliation-inline-logo" src="/images/affiliations/im-motors.svg" alt="IM Motors logo"> IM Motors | Supervised by Dr. Wenbo Ding, **2025.08 - 2025.10**
+- <img class="affiliation-inline-logo internship-inline-logo" src="/images/affiliations/im-motors.svg" alt="IM Motors logo"> IM Motors | Supervised by Dr. Wenbo Ding, **2025.08 - 2025.10**
   - Algorithm Intern on VLMs for autonomous driving
   - Implement large-scale SFT on Qwen3-VL-8B via ~80k real-world driving data to construct a reasoning expert.
   - Apply data augmentation via SynDiff-AD to better model generalization against long-tail distribution scenarios.
