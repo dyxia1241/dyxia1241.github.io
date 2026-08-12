@@ -568,7 +568,7 @@ permalink: /
         <nav class="links" aria-label="Primary">
           <a href="#education">Education</a>
           <a href="#experience">Internship Experience</a>
-          <a href="#projects">Projects</a>
+          <a href="#projects">Project Experience</a>
           <a href="#publication">Publications</a>
           <a href="{{ '/cv/' | relative_url }}">CV</a>
           <a href="{{ '/blogs/' | relative_url }}">Blog</a>
@@ -672,13 +672,15 @@ permalink: /
                 </span>
                 <h3>Shanghai AI Laboratory</h3>
               </div>
-              <p>Research Intern on process-aware VLM/VLA benchmarking for embodied manipulation</p>
+              <p>Shanghai AI Laboratory | Supervised by Prof. Yao Mu and Dr. Yue Shi</p>
+              <p>Research Intern on VLAs/WAMs for embodied manipulation</p>
               <ul class="detail-list">
-                <li>Benchmarked process-aware understanding in robotic manipulation.</li>
-                <li>Fine-tuned VLA policies and modeled action progress for real-world deployment.</li>
+                <li>Benchmark fine-grained process understanding of VLMs via scaleable manipulative primitive segmentation.</li>
+                <li>Finetune π0, π0.5 using tele-operated data via openpi and implement policies on ARX-AC 2 in real world.</li>
+                <li>Couple a progress expert based on Fast-WAM to jointly model video, action and progress.</li>
               </ul>
             </div>
-            <div class="date">03/2026 - 08/2026</div>
+            <div class="date">2026.03 - 2026.08</div>
           </article>
           <article class="entry">
             <div>
@@ -692,86 +694,34 @@ permalink: /
                 </span>
                 <h3>IM Motors</h3>
               </div>
-              <p>Algorithm Engineer Intern on VLM reasoning for autonomous driving</p>
+              <p>IM Motors | Supervised by Dr. Wenbo Ding</p>
+              <p>Algorithm Intern on VLMs for autonomous driving</p>
               <ul class="detail-list">
-                <li>Fine-tuned Qwen3-VL-8B with real-world driving data.</li>
-                <li>Explored SynDiff-AD augmentation for long-tail driving scenarios.</li>
+                <li>Implement large-scale SFT on Qwen3-VL-8B via ~80k real-world driving data to construct a reasoning expert.</li>
+                <li>Apply data augmentation via SynDiff-AD to better model generalization against long-tail distribution scenarios.</li>
               </ul>
             </div>
-            <div class="date">08/2025 - 10/2025</div>
-          </article>
-          <article class="entry">
-            <div>
-              <div class="entry-heading">
-                <span class="affiliation-logo">
-                  <img
-                    src="{{ '/images/affiliations/uiuc.svg' | relative_url }}"
-                    alt="University of Illinois Urbana-Champaign logo"
-                    loading="lazy"
-                  >
-                </span>
-                <h3>University of Illinois Urbana-Champaign</h3>
-              </div>
-              <p>Research Assistant on robotic rehabilitation therapy planning</p>
-              <ul class="detail-list">
-                <li>Developed Conv-BiLSTM trajectory prediction for robotic rehabilitation.</li>
-                <li>Built imitation learning and stochastic MPC components for assistance planning.</li>
-              </ul>
-            </div>
-            <div class="date">06/2024 - 04/2025</div>
-          </article>
-          <article class="entry">
-            <div>
-              <div class="entry-heading">
-                <span class="affiliation-logo">
-                  <img
-                    src="{{ '/images/affiliations/zju.png' | relative_url }}"
-                    alt="Zhejiang University logo"
-                    loading="lazy"
-                  >
-                </span>
-                <h3>Zhejiang University</h3>
-              </div>
-              <p>Research Assistant on dexterous hand design and simulation</p>
-              <ul class="detail-list">
-                <li>Dexterous hand design and simulation.</li>
-                <li>ROS2, Gazebo, and SolidWorks.</li>
-              </ul>
-            </div>
-            <div class="date">09/2023 - 12/2023</div>
+            <div class="date">2025.08 - 2025.10</div>
           </article>
         </div>
       </section>
 
       <section id="projects" class="section" aria-labelledby="projects-title">
         <div>
-          <h2 id="projects-title">Selected Projects</h2>
-          <p class="section-kicker">Robotics, embodied AI, and learning systems.</p>
+          <h2 id="projects-title">Project Experience</h2>
         </div>
         <div class="project-grid">
           <article class="project-card">
-            <h3>Process-Aware VLA/WAM for Embodied Manipulation</h3>
+            <h3>Research Thesis: Dual-System based Vision-Language Navigation Grounded on Quadruped Robots</h3>
             <p>
-              Benchmarked fine-grained process understanding of VLMs via scalable manipulation
-              primitive segmentation, then connected progress modeling with VLA policy deployment.
+              <strong>Senior Thesis @ Tsinghua &amp; ZJU</strong> | Supervised by Prof. Hua Chen
             </p>
-            <div class="project-meta">
-              <div class="tag-row" aria-label="Project topics">
-                <span class="tag">VLA</span>
-                <span class="tag">WAM</span>
-                <span class="tag">Manipulation</span>
-              </div>
-              <div class="project-links">
-                <a href="https://arxiv.org/pdf/2606.13040">Paper</a>
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <h3>Dual-System Vision-Language Navigation on Quadruped Robots</h3>
-            <p>
-              Combined YOLO-World for high-frequency perception with GLM 5.1 for semantic reasoning,
-              using a confidence-gated mechanism on DeepRobotics Lite 3.
-            </p>
+            <p>2025.10 - 2026.03</p>
+            <ul class="detail-list">
+              <li>Combine YOLO-World (System 1) for high-frequency control and GLM 5.1 (System 2) for semantic reasoning.</li>
+              <li>Engineer an asynchronous confidence-gated mechanism, allowing the VLM to actively intervene when needed.</li>
+              <li>Deploy on DeepRobotics Lite 3 to achieve target tracking and occlusion handling in dynamic environments.</li>
+            </ul>
             <div class="project-meta">
               <div class="tag-row" aria-label="Project topics">
                 <span class="tag">VLN</span>
@@ -781,11 +731,16 @@ permalink: /
             </div>
           </article>
           <article class="project-card">
-            <h3>Robotic Rehabilitation Therapy Planning</h3>
+            <h3>Research Thesis: Robotic Rehabilitation Therapy via Trajectory &amp; Assistance Level Planning</h3>
             <p>
-              Built trajectory prediction, imitation learning, and stochastic MPC components for
-              human-like rehabilitation trajectories and assistance-level planning.
+              <strong>UIUC</strong> | Supervised by Prof. Dušan Stipanović
             </p>
+            <p>2024.06 - 2025.04</p>
+            <ul class="detail-list">
+              <li>Develop Conv-BiLSTM architecture for trajectory prediction, improving accuracy by 10% over baseline models.</li>
+              <li>Achieve imitation learning via a bi-level optimization framework to synthesize human-like trajectories.</li>
+              <li>Formulate data-driven stochastic MPC with receding horizon to optimize assistance strategies under uncertainty.</li>
+            </ul>
             <div class="project-meta">
               <div class="tag-row" aria-label="Project topics">
                 <span class="tag">Conv-BiLSTM</span>
@@ -794,20 +749,6 @@ permalink: /
               </div>
               <div class="project-links">
                 <a href="https://arxiv.org/pdf/2504.19230">Paper</a>
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <h3>VLM Reasoning Expert for Autonomous Driving</h3>
-            <p>
-              Implemented supervised fine-tuning on Qwen3-VL-8B with real-world driving data and
-              explored SynDiff-AD augmentation for long-tail scenarios.
-            </p>
-            <div class="project-meta">
-              <div class="tag-row" aria-label="Project topics">
-                <span class="tag">Qwen3-VL</span>
-                <span class="tag">SFT</span>
-                <span class="tag">Autonomous driving</span>
               </div>
             </div>
           </article>
