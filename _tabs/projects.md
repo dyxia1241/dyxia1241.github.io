@@ -6,24 +6,34 @@ order: 3
 
 ## Selected Projects
 
-### Robotic Trail Maker Platform
+### Process-Aware VLA/WAM for Embodied Manipulation
 
-Clinical robotics work for rehabilitation use cases in neurological conditions.  
-Topics: medical robotics, human-robot interaction, clinical workflows.
+Research internship work at Shanghai AI Laboratory on process-aware robotic manipulation.
+I benchmarked fine-grained process understanding of VLMs through scalable manipulation primitive segmentation, fine-tuned pi0/pi0.5 policies with tele-operated data through openpi, and explored progress modeling with Fast-WAM for real-world manipulation deployment.
+
+Topics: VLA, VLM benchmark, WAM, robotic manipulation, openpi.
+
+[RoboProcessBench PDF](https://arxiv.org/pdf/2606.13040)
+
+### Dual-System Vision-Language Navigation on Quadruped Robots
+
+Senior thesis work on grounding vision-language navigation on quadruped robots.
+The system combines YOLO-World as a high-frequency perception module with GLM 5.1 for semantic reasoning, then uses an asynchronous confidence-gated mechanism so the VLM can intervene when needed.
+
+Topics: vision-language navigation, quadruped robots, YOLO-World, GLM, DeepRobotics Lite 3.
+
+### Robotic Rehabilitation Therapy via Trajectory and Assistance Planning
+
+UIUC research thesis work on robot-assisted rehabilitation.
+I developed a Conv-BiLSTM trajectory prediction model, used a bi-level imitation-learning framework to synthesize human-like trajectories, and formulated data-driven stochastic MPC for assistance-level planning under uncertainty.
+
+Topics: medical robotics, rehabilitation, Conv-BiLSTM, imitation learning, stochastic MPC.
 
 [Paper PDF](https://arxiv.org/pdf/2504.19230)
 
-### VLM Data Refilling for Autonomous Driving
+### VLM Reasoning Expert for Autonomous Driving
 
-Fine-tuning and data-refilling workflow for vision-language models using real-road data at IM Motors.  
-Tools: Llama Factory, ROS2.
+Industry internship work at IM Motors on vision-language models for autonomous driving.
+I implemented supervised fine-tuning on Qwen3-VL-8B with real-world driving data and explored SynDiff-AD data augmentation for better generalization against long-tail driving scenarios.
 
-### Medical Robot Time-Series Forecasting
-
-Classification and forecasting pipeline for medical robot time-series data.  
-Tools: PyTorch, Transformer, LSTM.
-
-### Dexterous Hand Design and Simulation
-
-Mechanical design and simulation work for a dexterous robotic hand.  
-Tools: ROS2, Gazebo, SolidWorks.
+Topics: autonomous driving, VLM, Qwen3-VL, SFT, SynDiff-AD.

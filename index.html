@@ -306,6 +306,13 @@ permalink: /
         object-fit: contain;
       }
 
+      .affiliation-logo.text-logo {
+        color: var(--accent-strong);
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
       .entry p {
         margin: 7px 0 0;
         color: var(--muted);
@@ -335,6 +342,11 @@ permalink: /
         padding: 24px;
         background: var(--paper);
         box-shadow: 0 12px 34px rgba(23, 33, 38, 0.05);
+      }
+
+      .publication-list {
+        display: grid;
+        gap: 16px;
       }
 
       .publication h3 {
@@ -559,7 +571,7 @@ permalink: /
           <a href="#education">Education</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#publication">Publication</a>
+          <a href="#publication">Publications</a>
           <a href="{{ '/cv/' | relative_url }}">CV</a>
           <a href="{{ '/blogs/' | relative_url }}">Blog</a>
         </nav>
@@ -575,9 +587,10 @@ permalink: /
             <span class="cn">夏大雨</span>
           </h1>
           <p class="lead">
-            Senior undergraduate student in Mechanical Engineering at Zhejiang University and the
-            University of Illinois Urbana-Champaign. My interests include VLM/VLA for embodied AI,
-            robotic learning, and safe end-to-end systems for robots and autonomous vehicles.
+            Mechanical Engineering graduate from Zhejiang University and the University of Illinois
+            Urbana-Champaign, joining Tsinghua University's M.Eng. program in September 2026. My
+            interests include VLM/VLA for embodied AI, robotic learning, and safe end-to-end systems
+            for robots and autonomous vehicles.
           </p>
           <div class="hero-actions" aria-label="Contact and profile links">
             <a class="button primary" href="{{ '/files/CV_Eng.pdf' | relative_url }}">Download CV</a>
@@ -653,6 +666,20 @@ permalink: /
           <article class="entry">
             <div>
               <div class="entry-heading">
+                <span class="affiliation-logo text-logo" aria-hidden="true">AI</span>
+                <h3>Research Intern</h3>
+              </div>
+              <p>Shanghai AI Laboratory, embodied manipulation</p>
+              <ul class="detail-list">
+                <li>Benchmarked process-aware understanding in robotic manipulation.</li>
+                <li>Fine-tuned VLA policies and modeled action progress for real-world deployment.</li>
+              </ul>
+            </div>
+            <div class="date">03/2026 - 08/2026</div>
+          </article>
+          <article class="entry">
+            <div>
+              <div class="entry-heading">
                 <span class="affiliation-logo">
                   <img
                     src="{{ '/images/affiliations/im-motors.svg' | relative_url }}"
@@ -664,8 +691,8 @@ permalink: /
               </div>
               <p>IM Motors, joint autonomous driving center</p>
               <ul class="detail-list">
-                <li>Fine-tuning VLMs with real-road data and data refilling.</li>
-                <li>Llama Factory and ROS2.</li>
+                <li>Fine-tuned Qwen3-VL-8B with real-world driving data.</li>
+                <li>Explored SynDiff-AD augmentation for long-tail driving scenarios.</li>
               </ul>
             </div>
             <div class="date">08/2025 - 10/2025</div>
@@ -684,8 +711,8 @@ permalink: /
               </div>
               <p>University of Illinois Urbana-Champaign</p>
               <ul class="detail-list">
-                <li>Medical robot time-series classification and forecasting.</li>
-                <li>PyTorch, Transformer, and LSTM.</li>
+                <li>Developed Conv-BiLSTM trajectory prediction for robotic rehabilitation.</li>
+                <li>Built imitation learning and stochastic MPC components for assistance planning.</li>
               </ul>
             </div>
             <div class="date">06/2024 - 04/2025</div>
@@ -720,61 +747,64 @@ permalink: /
         </div>
         <div class="project-grid">
           <article class="project-card">
-            <h3>Robotic Trail Maker Platform</h3>
+            <h3>Process-Aware VLA/WAM for Embodied Manipulation</h3>
             <p>
-              Clinical robotics work for rehabilitation use cases, focused on translating a robotic
-              platform into concrete neurological-condition workflows.
+              Benchmarked fine-grained process understanding of VLMs via scalable manipulation
+              primitive segmentation, then connected progress modeling with VLA policy deployment.
             </p>
             <div class="project-meta">
               <div class="tag-row" aria-label="Project topics">
-                <span class="tag">Medical robotics</span>
-                <span class="tag">HRI</span>
-                <span class="tag">Clinical use cases</span>
+                <span class="tag">VLA</span>
+                <span class="tag">WAM</span>
+                <span class="tag">Manipulation</span>
               </div>
               <div class="project-links">
-                <a href="https://arxiv.org/pdf/2504.19230">PDF</a>
+                <a href="https://arxiv.org/pdf/2606.13040">Paper</a>
               </div>
             </div>
           </article>
           <article class="project-card">
-            <h3>VLM Data Refilling for Autonomous Driving</h3>
+            <h3>Dual-System Vision-Language Navigation on Quadruped Robots</h3>
             <p>
-              Fine-tuning and data-refilling workflow for vision-language models using real-road
-              data in an autonomous driving context.
+              Combined YOLO-World for high-frequency perception with GLM 5.1 for semantic reasoning,
+              using a confidence-gated mechanism on DeepRobotics Lite 3.
             </p>
             <div class="project-meta">
               <div class="tag-row" aria-label="Project topics">
-                <span class="tag">VLM</span>
-                <span class="tag">Llama Factory</span>
-                <span class="tag">ROS2</span>
+                <span class="tag">VLN</span>
+                <span class="tag">Quadruped robot</span>
+                <span class="tag">YOLO-World</span>
               </div>
             </div>
           </article>
           <article class="project-card">
-            <h3>Medical Robot Time-Series Forecasting</h3>
+            <h3>Robotic Rehabilitation Therapy Planning</h3>
             <p>
-              Classification and forecasting pipeline for medical robot time-series data using deep
-              sequence models.
+              Built trajectory prediction, imitation learning, and stochastic MPC components for
+              human-like rehabilitation trajectories and assistance-level planning.
             </p>
             <div class="project-meta">
               <div class="tag-row" aria-label="Project topics">
-                <span class="tag">PyTorch</span>
-                <span class="tag">Transformer</span>
-                <span class="tag">LSTM</span>
+                <span class="tag">Conv-BiLSTM</span>
+                <span class="tag">Imitation learning</span>
+                <span class="tag">MPC</span>
+              </div>
+              <div class="project-links">
+                <a href="https://arxiv.org/pdf/2504.19230">Paper</a>
               </div>
             </div>
           </article>
           <article class="project-card">
-            <h3>Dexterous Hand Design and Simulation</h3>
+            <h3>VLM Reasoning Expert for Autonomous Driving</h3>
             <p>
-              Mechanical design and simulation work for a dexterous robotic hand, spanning CAD,
-              ROS2, and Gazebo experiments.
+              Implemented supervised fine-tuning on Qwen3-VL-8B with real-world driving data and
+              explored SynDiff-AD augmentation for long-tail scenarios.
             </p>
             <div class="project-meta">
               <div class="tag-row" aria-label="Project topics">
-                <span class="tag">ROS2</span>
-                <span class="tag">Gazebo</span>
-                <span class="tag">SolidWorks</span>
+                <span class="tag">Qwen3-VL</span>
+                <span class="tag">SFT</span>
+                <span class="tag">Autonomous driving</span>
               </div>
             </div>
           </article>
@@ -783,25 +813,42 @@ permalink: /
 
       <section id="publication" class="section" aria-labelledby="publication-title">
         <div>
-          <h2 id="publication-title">Publication</h2>
-          <p class="section-kicker">Selected paper.</p>
+          <h2 id="publication-title">Publications</h2>
+          <p class="section-kicker">Selected papers.</p>
         </div>
-        <article class="publication">
-          <h3>Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases</h3>
-          <p>
-            S. Annamraju*, H. Nisar*, <strong>D. Xia*</strong>, S. A. Deka, A. Horowitz,
-            N. Milković, and D. M. Stipanović.
-          </p>
-          <p class="meta">
-            Submitted to International Journal of Social Robotics, under review.
-            <a href="https://arxiv.org/pdf/2504.19230">PDF</a>
-          </p>
-          <div class="tag-row" aria-label="Publication topics">
-            <span class="tag">Medical robotics</span>
-            <span class="tag">Rehabilitation</span>
-            <span class="tag">Human-robot interaction</span>
-          </div>
-        </article>
+        <div class="publication-list">
+          <article class="publication">
+            <h3>RoboProcessBench: Benchmarking Process-Aware Understanding in Vision-Language Robotic Manipulation</h3>
+            <p>
+              <strong>D. Xia*</strong>, Y. Shi*, Y. Mu, et al.
+            </p>
+            <p class="meta">
+              arXiv preprint arXiv:2606.13040, 2026. NeurIPS 2026 under review.
+              <a href="https://arxiv.org/pdf/2606.13040">PDF</a>
+            </p>
+            <div class="tag-row" aria-label="Publication topics">
+              <span class="tag">Robotic manipulation</span>
+              <span class="tag">Vision-language models</span>
+              <span class="tag">Benchmark</span>
+            </div>
+          </article>
+          <article class="publication">
+            <h3>Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases</h3>
+            <p>
+              S. Annamraju*, H. Nisar*, <strong>D. Xia*</strong>, S. A. Deka, A. Horowitz,
+              N. Milkovic, and D. M. Stipanovic.
+            </p>
+            <p class="meta">
+              arXiv preprint arXiv:2504.19230, 2025. International Journal of Social Robotics under review.
+              <a href="https://arxiv.org/pdf/2504.19230">PDF</a>
+            </p>
+            <div class="tag-row" aria-label="Publication topics">
+              <span class="tag">Medical robotics</span>
+              <span class="tag">Rehabilitation</span>
+              <span class="tag">Human-robot interaction</span>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
