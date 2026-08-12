@@ -18,7 +18,7 @@ order: 2
 
 ## Academic and Industrial Experience
 
-- Research Intern @ Shanghai AI Laboratory, **03/2026 - 08/2026**
+- <img class="affiliation-inline-logo shlab-inline-logo" src="/images/affiliations/shlab.png" alt="Shanghai AI Laboratory logo"> Research Intern @ Shanghai AI Laboratory, **03/2026 - 08/2026**
   - Process-aware VLM/VLA benchmarking for embodied manipulation
   - pi0/pi0.5 fine-tuning, openpi, ARX-AC 2 deployment, Fast-WAM progress modeling
 

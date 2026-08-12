@@ -306,11 +306,9 @@ permalink: /
         object-fit: contain;
       }
 
-      .affiliation-logo.text-logo {
-        color: var(--accent-strong);
-        font-size: 15px;
-        font-weight: 800;
-        letter-spacing: 0;
+      .affiliation-logo.shlab-logo img {
+        width: 38px;
+        height: 24px;
       }
 
       .entry p {
@@ -666,7 +664,13 @@ permalink: /
           <article class="entry">
             <div>
               <div class="entry-heading">
-                <span class="affiliation-logo text-logo" aria-hidden="true">AI</span>
+                <span class="affiliation-logo shlab-logo">
+                  <img
+                    src="{{ '/images/affiliations/shlab.png' | relative_url }}"
+                    alt="Shanghai AI Laboratory logo"
+                    loading="lazy"
+                  >
+                </span>
                 <h3>Research Intern</h3>
               </div>
               <p>Shanghai AI Laboratory, embodied manipulation</p>
