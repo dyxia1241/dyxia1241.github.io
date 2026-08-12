@@ -5,7 +5,6 @@ This repository hosts my personal website built with the [Chirpy](https://github
 ## Main Sections
 
 - Home: academic overview, education, experience, selected projects, and publication
-- CV: education, experience, skills, and downloadable PDF
 - Projects: selected robotics, embodied AI, and learning-systems work
 - Travel: selected travel and photography posts
 
