@@ -13,7 +13,7 @@ order: 2
 
 ## Publications
 
-- **Dayu Xia\***, **Yue Shi\***, Yao Mu, Huiting Ji, Chaofan Ma, Yingjie Zhou, Hua Chen, Yang Liu, Jiezhang Cao, and Guangtao Zhai, [*RoboProcessBench: Benchmarking Process-Aware Understanding in Vision-Language Robotic Manipulation*](https://arxiv.org/pdf/2606.13040), arXiv preprint arXiv:2606.13040, 2026. NeurIPS 2026 under review.
+- **D. Xia\***, **Y. Shi\***, Y. Mu, H. Ji, C. Ma, Y. Zhou, H. Chen, Y. Liu, J. Cao, and G. Zhai, [*RoboProcessBench: Benchmarking Process-Aware Understanding in Vision-Language Robotic Manipulation*](https://arxiv.org/pdf/2606.13040), arXiv preprint arXiv:2606.13040, 2026. NeurIPS 2026 under review.
 - **S. Annamraju\***, **H. Nisar\***, **D. Xia\***, S. A. Deka, A. Horowitz, N. Milkovic, and D. M. Stipanovic, [*Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases*](https://arxiv.org/pdf/2504.19230), arXiv preprint arXiv:2504.19230, 2025. International Journal of Social Robotics under review.
 
 ## Academic and Industrial Experience
