@@ -293,6 +293,17 @@ permalink: /
         gap: 13px;
       }
 
+      .entry-title {
+        min-width: 0;
+      }
+
+      .entry .entry-supervisor {
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.35;
+      }
+
       .affiliation-logo {
         flex: 0 0 auto;
         display: inline-flex;
@@ -678,9 +689,11 @@ permalink: /
                     loading="lazy"
                   >
                 </span>
-                <h3>Shanghai AI Laboratory</h3>
+                <div class="entry-title">
+                  <h3>Shanghai AI Laboratory</h3>
+                  <p class="entry-supervisor">Supervised by Prof. Yao Mu and Dr. Yue Shi</p>
+                </div>
               </div>
-              <p>Shanghai AI Laboratory | Supervised by Prof. Yao Mu and Dr. Yue Shi</p>
               <p>Research Intern on VLAs/WAMs for embodied manipulation</p>
               <ul class="detail-list">
                 <li>Benchmark fine-grained process understanding of VLMs via scaleable manipulative primitive segmentation.</li>
@@ -700,9 +713,11 @@ permalink: /
                     loading="lazy"
                   >
                 </span>
-                <h3>IM Motors</h3>
+                <div class="entry-title">
+                  <h3>IM Motors</h3>
+                  <p class="entry-supervisor">Supervised by Dr. Wenbo Ding</p>
+                </div>
               </div>
-              <p>IM Motors | Supervised by Dr. Wenbo Ding</p>
               <p>Algorithm Intern on VLMs for autonomous driving</p>
               <ul class="detail-list">
                 <li>Implement large-scale SFT on Qwen3-VL-8B via ~80k real-world driving data to construct a reasoning expert.</li>
