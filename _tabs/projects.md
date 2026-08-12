@@ -27,5 +27,3 @@ Topics: vision-language navigation, quadruped robots, YOLO-World, GLM, DeepRobot
 - Formulate data-driven stochastic MPC with receding horizon to optimize assistance strategies under uncertainty.
 
 Topics: medical robotics, rehabilitation, Conv-BiLSTM, imitation learning, stochastic MPC.
-
-[Paper PDF](https://arxiv.org/pdf/2504.19230)
