@@ -16,3 +16,8 @@ bundle exec jekyll s
 ```
 
 The site will be available at `dyxia1241.github.io`.
+
+## Deployment
+
+Use `main` for development and deployment. Set GitHub Pages to use GitHub Actions;
+pushes to `main` run `.github/workflows/pages-deploy.yml` to build and publish the site.
