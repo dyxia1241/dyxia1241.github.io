@@ -1,90 +1,825 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Dayu Xia">
-    <title>Dayu - Personal Website</title>
+---
+layout: null
+permalink: /
+---
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description | strip | escape }}">
+    <title>{{ site.title | escape }} - Academic Homepage</title>
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <meta property="og:title" content="{{ site.title | escape }} - Academic Homepage">
+    <meta property="og:description" content="{{ site.description | strip | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ '/' | absolute_url }}">
+    <meta property="og:image" content="{{ site.social_preview_image | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600&amp;family=Source+Sans+3:ital,wght@0,400..800;1,400..800&amp;family=Source+Serif+4:opsz,wght@8..60,500..800&amp;display=swap"
+      rel="stylesheet"
+    >
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #001f3f;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            margin: 10px；
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #001f3f;
-        }
-        section {
-            padding: 20px;
-            margin: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #001f3f;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
+      :root {
+        --bg: #f5f7f8;
+        --paper: #ffffff;
+        --paper-muted: #f9fbfb;
+        --ink: #172126;
+        --muted: #5a6870;
+        --line: #d7e1e4;
+        --accent: #08736f;
+        --accent-strong: #064f59;
+        --accent-alt: #4756a6;
+        --soft: #edf7f6;
+        --soft-alt: #f0f2fb;
+        --shadow: 0 18px 46px rgba(23, 33, 38, 0.09);
+        --font-sans: "Source Sans 3", Aptos, "SF Pro Text", "Segoe UI", "PingFang SC",
+          "Microsoft YaHei", sans-serif;
+        --font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype",
+          "Noto Serif SC", "Songti SC", Georgia, serif;
+        --font-cjk-serif: "Noto Serif SC", "Source Serif 4", "Songti SC", STSong, serif;
+      }
 
-    <header>
-        <h1>Welcome to Dayu's Website</h1>
-        <p>Junior Student @ ZJUI | ME + MATH | Prospective M.S./Ph.D. Candidate of 2026 Fall</p>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(180deg, #fbfcfd 0, var(--bg) 360px, #eef5f4 100%);
+        color: var(--ink);
+        font-family: var(--font-sans);
+        font-size: 16px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        color: var(--accent-alt);
+      }
+
+      .shell {
+        width: min(1120px, calc(100% - 48px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid rgba(215, 225, 228, 0.88);
+        background: rgba(251, 252, 253, 0.9);
+        backdrop-filter: blur(18px);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 64px;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .brand strong {
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .brand span {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px 16px;
+        font-size: 14px;
+        font-weight: 650;
+      }
+
+      .links a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .links a:hover {
+        color: var(--accent-strong);
+      }
+
+      main {
+        padding: 60px 0 80px;
+      }
+
+      .hero {
+        display: grid;
+        place-items: center;
+        padding: 42px 0 76px;
+      }
+
+      .hero-content {
+        max-width: 820px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        color: var(--accent-alt);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: var(--font-serif);
+        line-height: 1.18;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        margin: 0;
+        color: #111a1f;
+        font-size: 74px;
+        font-weight: 700;
+      }
+
+      h1 .cn {
+        display: block;
+        margin-top: 6px;
+        color: var(--muted);
+        font-family: var(--font-cjk-serif);
+        font-size: 32px;
+        font-weight: 500;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin: 26px auto 0;
+        color: #354247;
+        font-size: 20px;
+        line-height: 1.65;
+        text-align: left;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 8px 15px;
+        background: var(--paper);
+        color: var(--ink);
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 6px 18px rgba(23, 33, 38, 0.04);
+        transition: border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+      }
+
+      .button:hover {
+        border-color: #b7c7cc;
+        color: var(--accent-strong);
+        transform: translateY(-1px);
+      }
+
+      .button.primary {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: #ffffff;
+        box-shadow: 0 10px 24px rgba(8, 115, 111, 0.18);
+      }
+
+      .button.primary:hover {
+        border-color: var(--accent-strong);
+        background: var(--accent-strong);
+        color: #ffffff;
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: 170px minmax(0, 1fr);
+        gap: 44px;
+        padding: 48px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .section h2 {
+        display: inline-block;
+        margin: 0;
+        padding-top: 8px;
+        border-top: 3px solid var(--accent);
+        color: var(--accent-strong);
+        font-family: var(--font-sans);
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.08;
+      }
+
+      .section-kicker {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .entry-list {
+        display: grid;
+        gap: 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--paper);
+        box-shadow: 0 12px 34px rgba(23, 33, 38, 0.05);
+      }
+
+      .entry {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(138px, max-content);
+        gap: 24px;
+        align-items: start;
+        border-bottom: 1px solid var(--line);
+        padding: 22px;
+      }
+
+      .entry:last-child {
+        border-bottom: 0;
+      }
+
+      .entry h3 {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.25;
+      }
+
+      .entry-heading {
+        display: flex;
+        align-items: flex-start;
+        gap: 13px;
+      }
+
+      .entry-title {
+        min-width: 0;
+      }
+
+      .entry .entry-supervisor {
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.35;
+      }
+
+      .affiliation-logo {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: linear-gradient(180deg, #ffffff, var(--paper-muted));
+      }
+
+      .affiliation-logo img {
+        display: block;
+        width: 34px;
+        height: 34px;
+        object-fit: contain;
+      }
+
+      .affiliation-logo.internship-logo {
+        width: 122px;
+        height: 72px;
+      }
+
+      .affiliation-logo.internship-logo img {
+        width: 108px;
+        height: auto;
+        max-height: 62px;
+      }
+
+      .entry p {
+        margin: 7px 0 0;
+        color: var(--muted);
+      }
+
+      .date {
+        justify-self: end;
+        color: var(--accent-alt);
+        font-size: 14px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .detail-list {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .detail-list li + li {
+        margin-top: 5px;
+      }
+
+      .publication {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 24px;
+        background: var(--paper);
+        box-shadow: 0 12px 34px rgba(23, 33, 38, 0.05);
+      }
+
+      .publication-list {
+        display: grid;
+        gap: 16px;
+      }
+
+      .publication h3 {
+        margin: 0 0 10px;
+        max-width: 820px;
+        font-size: 20px;
+      }
+
+      .publication p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .publication .meta {
+        margin-top: 12px;
+        color: #354247;
+        font-size: 14px;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+        gap: 16px;
+      }
+
+      .project-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 230px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 22px;
+        background: var(--paper);
+        box-shadow: 0 12px 34px rgba(23, 33, 38, 0.05);
+      }
+
+      .project-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 3px;
+        border-radius: 8px 0 0 8px;
+        background: var(--accent);
+      }
+
+      .project-card:nth-child(even)::before {
+        background: var(--accent-alt);
+      }
+
+      .project-card h3 {
+        margin: 0;
+        min-height: 2.45em;
+        font-size: 19px;
+        line-height: 1.22;
+      }
+
+      .project-card p {
+        margin: 10px 0 0;
+        color: var(--muted);
+      }
+
+      .project-meta {
+        margin-top: auto;
+      }
+
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        margin-top: 14px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 28px;
+        border: 1px solid #c8d9d7;
+        border-radius: 999px;
+        padding: 3px 10px;
+        background: var(--soft);
+        color: var(--accent-strong);
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .project-card:nth-child(even) .tag {
+        border-color: #d1d5ef;
+        background: var(--soft-alt);
+        color: #394785;
+      }
+
+      .footer {
+        border-top: 1px solid var(--line);
+        padding: 28px 0 36px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 960px) {
+        .hero {
+          padding-top: 10px;
+        }
+
+        h1 {
+          font-size: 62px;
+        }
+
+        h1 .cn {
+          font-size: 29px;
+        }
+      }
+
+      @media (max-width: 860px) {
+        .section {
+          grid-template-columns: 1fr;
+          gap: 22px;
+          padding: 40px 0;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .shell {
+          width: min(100% - 28px, 1120px);
+        }
+
+        .nav {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 14px 0;
+          gap: 12px;
+        }
+
+        .links {
+          justify-content: flex-start;
+          gap: 8px 14px;
+        }
+
+        main {
+          padding-top: 28px;
+        }
+
+        .hero {
+          padding-bottom: 52px;
+        }
+
+        .lead {
+          font-size: 18px;
+        }
+
+        h1 {
+          font-size: 46px;
+        }
+
+        h1 .cn {
+          font-size: 25px;
+        }
+
+        .entry {
+          grid-template-columns: 1fr;
+          gap: 4px;
+          padding: 20px 18px;
+        }
+
+        .date {
+          justify-self: start;
+          order: -1;
+          margin-bottom: 6px;
+          font-size: 13px;
+        }
+
+        .entry-heading {
+          gap: 12px;
+        }
+
+        .entry h3 {
+          font-size: 17px;
+        }
+
+        .affiliation-logo {
+          width: 42px;
+          height: 42px;
+        }
+
+        .affiliation-logo img {
+          width: 30px;
+          height: 30px;
+        }
+
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .project-card {
+          min-height: auto;
+        }
+
+        .project-card h3 {
+          min-height: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell nav">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <strong>{{ site.title | escape }}</strong>
+          <span>VLA/WAM @Tsinghua University</span>
+        </a>
+        <nav class="links" aria-label="Primary">
+          <a href="#education">Education</a>
+          <a href="#publication">Publications</a>
+          <a href="#experience">Internship Experience</a>
+          <a href="#projects">Project Experience</a>
+        </nav>
+      </div>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <main id="top" class="shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title">
+            {{ site.title | escape }}
+          </h1>
+          <p class="lead">
+            Hi There! I am {{ site.title | escape }}, a student from Tsinghua University. I am interested in
+            post-training VLAs/WAMs in embodied systems. Currently I look into process reward
+            models. I am originally from Shanghai, China. If you would like to connect, please do
+            not hesitate to reach me at my email!
+          </p>
+          <div class="hero-actions" aria-label="Contact and profile links">
+            <a class="button primary" href="mailto:{{ site.social.email }}">📧 Email</a>
+            <a class="button" href="https://github.com/{{ site.github.username }}">💻 GitHub</a>
+          </div>
+        </div>
+      </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="A picture of me @ Tokyo" width="200" style="float: right; margin-left: 20px;">
-        <p>Hi there! I am Dayu Xia (夏大雨), majoring in Mechanical Engineering @ 
-            <a href="https://zjui.intl.zju.edu.cn/en" target="_blank">ZJUI, Zhejiang University</a>
-            and
-            <a href="https://mechse.illinois.edu/" target="_blank">Dept. of MechSE, UIUC</a> (dual degree program).<br>
-            <br>
-            As an ME student, my interests lie at the intersection of control science and machine learning.
-            I'm also pursuing a minor in mathematics @ UIUC. Starting at the summer of 2024, I have the fortune to work with
-            <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank"> Prof. Dusan Stipanovic</a> from 
-            <a href="https://csl.illinois.edu/" target="_blank"> CSL, UIUC</a>
-            on applying modified internal model control on conventional RNN architecture to boost robustness and trustability. <br>
-            <br>
-            I have solid mathematics background with profound familiarity with programming languages such as Python and C,
-            CAD softwares like Solidworks and Fusion 360. Now I am actively looking for M.S. or Ph.D. position in the 
-            broad field of applied mathematics of 2026 Fall. You are more than welcome to check out my 
-            <a href="CV_Dayu_Xia.pdf" target="_blank">CV</a>
-            for more details.
+      <section id="education" class="section" aria-labelledby="education-title">
+        <div>
+          <h2 id="education-title">Education</h2>
+        </div>
+        <div class="entry-list">
+          <article class="entry">
+            <div>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/tsinghua.png' | relative_url }}"
+                    alt="Tsinghua University logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>Tsinghua University</h3>
+              </div>
+              <p>M.Eng. in Data Science</p>
+            </div>
+            <div class="date">09/2026 - 06/2028</div>
+          </article>
+          <article class="entry">
+            <div>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/zju.png' | relative_url }}"
+                    alt="Zhejiang University logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>Zhejiang University</h3>
+              </div>
+              <p>B.Eng. in Mechanical Engineering</p>
+            </div>
+            <div class="date">09/2022 - 06/2026</div>
+          </article>
+          <article class="entry">
+            <div>
+              <div class="entry-heading">
+                <span class="affiliation-logo">
+                  <img
+                    src="{{ '/images/affiliations/uiuc.svg' | relative_url }}"
+                    alt="University of Illinois Urbana-Champaign logo"
+                    loading="lazy"
+                  >
+                </span>
+                <h3>University of Illinois Urbana-Champaign</h3>
+              </div>
+              <p>B.S. in Mechanical Engineering</p>
+            </div>
+            <div class="date">09/2022 - 06/2026</div>
+          </article>
+        </div>
+      </section>
 
-        </p>
-    </section>
+      <section id="publication" class="section" aria-labelledby="publication-title">
+        <div>
+          <h2 id="publication-title">Publications</h2>
+        </div>
+        <div class="publication-list">
+          <article class="publication">
+            <h3>RoboProcessBench: Benchmarking Process-Aware Understanding in Vision-Language Robotic Manipulation</h3>
+            <p>
+              <strong>D. Xia*</strong>, Y. Shi*, Y. Mu, H. Ji, C. Ma, Y. Zhou, H. Chen, Y. Liu,
+              J. Cao, and G. Zhai.
+            </p>
+            <p class="meta">
+              arXiv preprint arXiv:2606.13040, 2026. NeurIPS 2026 under review.
+              <a href="https://arxiv.org/pdf/2606.13040">PDF</a>
+            </p>
+            <div class="tag-row" aria-label="Publication topics">
+              <span class="tag">Robotic manipulation</span>
+              <span class="tag">Vision-language models</span>
+              <span class="tag">Benchmark</span>
+            </div>
+          </article>
+          <article class="publication">
+            <h3>Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases</h3>
+            <p>
+              S. Annamraju*, H. Nisar*, <strong>D. Xia*</strong>, S. A. Deka, A. Horowitz,
+              N. Milkovic, and D. M. Stipanovic.
+            </p>
+            <p class="meta">
+              arXiv preprint arXiv:2504.19230, 2025. International Journal of Social Robotics under review.
+              <a href="https://arxiv.org/pdf/2504.19230">PDF</a>
+            </p>
+            <div class="tag-row" aria-label="Publication topics">
+              <span class="tag">Medical robotics</span>
+              <span class="tag">Rehabilitation</span>
+              <span class="tag">Human-robot interaction</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at: <a href="mailto:dayuxia2@illinois.edu">dayuxia2@illinois.edu</a></p>
-    </section>
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div>
+          <h2 id="experience-title">Internship Experience</h2>
+        </div>
+        <div class="entry-list">
+          <article class="entry">
+            <div>
+              <div class="entry-heading">
+                <span class="affiliation-logo internship-logo">
+                  <img
+                    src="{{ '/images/affiliations/shlab.png' | relative_url }}"
+                    alt="Shanghai AI Laboratory logo"
+                    loading="lazy"
+                  >
+                </span>
+                <div class="entry-title">
+                  <h3>Shanghai AI Laboratory</h3>
+                  <p class="entry-supervisor">Supervised by Prof. Yao Mu and Dr. Yue Shi</p>
+                </div>
+              </div>
+              <p>Research Intern on VLAs/WAMs for embodied manipulation</p>
+              <ul class="detail-list">
+                <li>Benchmark fine-grained process understanding of VLMs via scaleable manipulative primitive segmentation.</li>
+                <li>Finetune π0, π0.5 using tele-operated data via openpi and implement policies on ARX-AC 2 in real world.</li>
+                <li>Couple a progress expert based on Fast-WAM to jointly model video, action and progress.</li>
+              </ul>
+            </div>
+            <div class="date">2026.03 - 2026.08</div>
+          </article>
+          <article class="entry">
+            <div>
+              <div class="entry-heading">
+                <span class="affiliation-logo internship-logo">
+                  <img
+                    src="{{ '/images/affiliations/im-motors.svg' | relative_url }}"
+                    alt="IM Motors logo"
+                    loading="lazy"
+                  >
+                </span>
+                <div class="entry-title">
+                  <h3>IM Motors</h3>
+                  <p class="entry-supervisor">Supervised by Dr. Wenbo Ding</p>
+                </div>
+              </div>
+              <p>Algorithm Intern on VLMs for autonomous driving</p>
+              <ul class="detail-list">
+                <li>Implement large-scale SFT on Qwen3-VL-8B via ~80k real-world driving data to construct a reasoning expert.</li>
+                <li>Apply data augmentation via SynDiff-AD to better model generalization against long-tail distribution scenarios.</li>
+              </ul>
+            </div>
+            <div class="date">2025.08 - 2025.10</div>
+          </article>
+        </div>
+      </section>
 
-    <footer>
-        <p>&copy; 2024 Dayu Xia | All Rights Reserved</p>
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div>
+          <h2 id="projects-title">Project Experience</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Research Thesis: Dual-System based Vision-Language Navigation Grounded on Quadruped Robots</h3>
+            <p>
+              <strong>Senior Thesis @ Tsinghua &amp; ZJU</strong> | Supervised by Prof. Hua Chen
+            </p>
+            <p>2025.10 - 2026.03</p>
+            <ul class="detail-list">
+              <li>Combine YOLO-World (System 1) for high-frequency control and GLM 5.1 (System 2) for semantic reasoning.</li>
+              <li>Engineer an asynchronous confidence-gated mechanism, allowing the VLM to actively intervene when needed.</li>
+              <li>Deploy on DeepRobotics Lite 3 to achieve target tracking and occlusion handling in dynamic environments.</li>
+            </ul>
+            <div class="project-meta">
+              <div class="tag-row" aria-label="Project topics">
+                <span class="tag">VLN</span>
+                <span class="tag">Quadruped robot</span>
+                <span class="tag">YOLO-World</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Research Thesis: Robotic Rehabilitation Therapy via Trajectory &amp; Assistance Level Planning</h3>
+            <p>
+              <strong>UIUC</strong> | Supervised by Prof. Dušan Stipanović
+            </p>
+            <p>2024.06 - 2025.04</p>
+            <ul class="detail-list">
+              <li>Develop Conv-BiLSTM architecture for trajectory prediction, improving accuracy by 10% over baseline models.</li>
+              <li>Achieve imitation learning via a bi-level optimization framework to synthesize human-like trajectories.</li>
+              <li>Formulate data-driven stochastic MPC with receding horizon to optimize assistance strategies under uncertainty.</li>
+            </ul>
+            <div class="project-meta">
+              <div class="tag-row" aria-label="Project topics">
+                <span class="tag">Conv-BiLSTM</span>
+                <span class="tag">Imitation learning</span>
+                <span class="tag">MPC</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        © {{ 'now' | date: '%Y' }} {{ site.social.name | escape }}. Built with Jekyll and hosted on GitHub Pages.
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
