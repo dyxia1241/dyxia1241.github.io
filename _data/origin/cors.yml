@@ -1,0 +1,7 @@
+webfonts: /assets/css/fonts.css
+
+resource_hints:
+  - url: https://cdn.jsdelivr.net
+    links:
+      - rel: preconnect
+      - rel: dns-prefetch

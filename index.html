@@ -31,11 +31,6 @@ permalink: /
         --soft: #edf7f6;
         --soft-alt: #f0f2fb;
         --shadow: 0 12px 32px rgba(23, 33, 38, 0.05);
-        --font-sans: "Source Sans 3", Aptos, "SF Pro Text", "Segoe UI", "PingFang SC",
-          "Microsoft YaHei", sans-serif;
-        --font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype",
-          "Noto Serif SC", "Songti SC", Georgia, serif;
-        --font-cjk-serif: "Noto Serif SC", "Source Serif 4", "Songti SC", STSong, serif;
       }
 
       * {
@@ -53,7 +48,7 @@ permalink: /
         color: var(--ink);
         font-family: var(--font-sans);
         font-size: 16px;
-        line-height: 1.65;
+        line-height: 1.7;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
       }
@@ -106,12 +101,12 @@ permalink: /
 
       .brand strong {
         font-size: 17px;
-        font-weight: 700;
+        font-weight: 650;
       }
 
       .brand span {
         color: var(--muted);
-        font-size: 14px;
+        font-size: 13px;
       }
 
       .links {
@@ -119,8 +114,8 @@ permalink: /
         flex-wrap: wrap;
         justify-content: flex-end;
         gap: 8px 16px;
-        font-size: 14px;
-        font-weight: 650;
+        font-size: 13px;
+        font-weight: 550;
       }
 
       .links a {
@@ -171,23 +166,26 @@ permalink: /
       h1,
       h2,
       h3 {
-        font-family: var(--font-serif);
-        line-height: 1.18;
-        letter-spacing: 0;
+        font-family: var(--font-sans);
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: -0.025em;
       }
 
       h1 {
         margin: 0;
         color: #111a1f;
-        font-size: 74px;
-        font-weight: 700;
+        font-size: 68px;
+        font-weight: 650;
+        line-height: 1.1;
+        letter-spacing: -0.045em;
       }
 
       h1 .cn {
         display: block;
         margin-top: 6px;
         color: var(--muted);
-        font-family: var(--font-cjk-serif);
+        font-family: var(--font-sans);
         font-size: 32px;
         font-weight: 500;
       }
@@ -196,8 +194,8 @@ permalink: /
         max-width: 760px;
         margin: 26px 0 0;
         color: #354247;
-        font-size: 20px;
-        line-height: 1.65;
+        font-size: 19px;
+        line-height: 1.8;
         text-align: left;
       }
 
@@ -219,7 +217,7 @@ permalink: /
         background: var(--paper);
         color: var(--ink);
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 600;
         text-decoration: none;
         box-shadow: 0 6px 18px rgba(23, 33, 38, 0.04);
         transition: border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
@@ -260,9 +258,9 @@ permalink: /
         border-top: 3px solid var(--accent);
         color: var(--accent-strong);
         font-family: var(--font-sans);
-        font-size: 28px;
-        font-weight: 800;
-        line-height: 1.08;
+        font-size: 24px;
+        font-weight: 650;
+        line-height: 1.25;
       }
 
       .section-kicker {
@@ -298,7 +296,7 @@ permalink: /
       .entry h3 {
         margin: 0;
         font-size: 20px;
-        line-height: 1.3;
+        line-height: 1.4;
       }
 
       #education .entry h3 {
@@ -355,6 +353,7 @@ permalink: /
       .entry p {
         margin: 7px 0 0;
         color: var(--muted);
+        font-size: 15px;
       }
 
       .date {
@@ -363,8 +362,9 @@ permalink: /
         padding: 3px 8px;
         background: var(--soft-alt);
         color: var(--accent-alt);
-        font-size: 13px;
-        font-weight: 700;
+        font-size: 12px;
+        font-weight: 600;
+        font-variant-numeric: tabular-nums;
         white-space: nowrap;
       }
 
@@ -372,7 +372,8 @@ permalink: /
         margin: 14px 0 0;
         padding-left: 18px;
         color: var(--muted);
-        line-height: 1.75;
+        font-size: 15px;
+        line-height: 1.8;
       }
 
       .detail-list li + li {
@@ -400,20 +401,21 @@ permalink: /
       .publication h3 {
         margin: 0 0 10px;
         max-width: 820px;
-        font-size: 22px;
-        line-height: 1.35;
+        font-size: 20px;
+        line-height: 1.45;
         text-wrap: balance;
       }
 
       .publication p {
         margin: 0;
         color: var(--muted);
+        font-size: 14px;
       }
 
       .publication .meta {
         margin-top: 12px;
         color: #354247;
-        font-size: 15px;
+        font-size: 14px;
       }
 
       .publication-venue {
@@ -429,7 +431,7 @@ permalink: /
         background: var(--soft);
         color: var(--accent-strong);
         font-size: 11px;
-        font-weight: 700;
+        font-weight: 600;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         vertical-align: middle;
@@ -456,15 +458,15 @@ permalink: /
         padding: 3px 10px;
         background: var(--soft);
         color: var(--accent-strong);
-        font-size: 13px;
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: 500;
       }
 
       .footer {
         border-top: 1px solid var(--line);
         padding: 28px 0 36px;
         color: var(--muted);
-        font-size: 14px;
+        font-size: 13px;
       }
 
       @media (max-width: 960px) {
@@ -475,7 +477,7 @@ permalink: /
         }
 
         h1 {
-          font-size: 62px;
+          font-size: 56px;
         }
 
         h1 .cn {
@@ -550,11 +552,11 @@ permalink: /
         }
 
         .lead {
-          font-size: 18px;
+          font-size: 17px;
         }
 
         h1 {
-          font-size: 46px;
+          font-size: 44px;
         }
 
         h1 .cn {
@@ -571,7 +573,6 @@ permalink: /
           justify-self: start;
           order: -1;
           margin-bottom: 6px;
-          font-size: 13px;
         }
 
         .entry-heading {
@@ -593,7 +594,7 @@ permalink: /
         }
 
         .publication h3 {
-          font-size: 20px;
+          font-size: 18px;
         }
 
         .affiliation-logo {
