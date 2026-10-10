@@ -4,8 +4,6 @@ icon: fas fa-diagram-project
 order: 3
 ---
 
-## Project Experience
-
 ### Research Thesis: Dual-System based Vision-Language Navigation Grounded on Quadruped Robots
 
 **Senior Thesis @ Tsinghua & ZJU | Supervised by Prof. Hua Chen**<br>
