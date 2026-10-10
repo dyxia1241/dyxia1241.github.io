@@ -440,64 +440,6 @@ permalink: /
         white-space: nowrap;
       }
 
-      .project-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        align-items: stretch;
-        gap: 16px;
-      }
-
-      .project-card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-height: 230px;
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 22px;
-        background: var(--paper);
-        box-shadow: var(--shadow);
-      }
-
-      .project-card::before {
-        content: "";
-        position: absolute;
-        inset: 0 auto 0 0;
-        width: 3px;
-        border-radius: 10px 0 0 10px;
-        background: var(--accent);
-      }
-
-      .project-card:nth-child(even)::before {
-        background: var(--accent-alt);
-      }
-
-      .project-card h3 {
-        margin: 0;
-        min-height: 2.45em;
-        font-size: 20px;
-        line-height: 1.35;
-        text-wrap: balance;
-      }
-
-      .project-card p {
-        margin: 10px 0 0;
-        color: var(--muted);
-      }
-
-      .project-meta {
-        margin-top: auto;
-      }
-
-      .project-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px 14px;
-        margin-top: 14px;
-        font-size: 14px;
-        font-weight: 700;
-      }
-
       .tag-row {
         display: flex;
         flex-wrap: wrap;
@@ -516,12 +458,6 @@ permalink: /
         color: var(--accent-strong);
         font-size: 13px;
         font-weight: 600;
-      }
-
-      .project-card:nth-child(even) .tag {
-        border-color: #d1d5ef;
-        background: var(--soft-alt);
-        color: #394785;
       }
 
       .footer {
@@ -670,17 +606,6 @@ permalink: /
           height: 30px;
         }
 
-        .project-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .project-card {
-          min-height: auto;
-        }
-
-        .project-card h3 {
-          min-height: 0;
-        }
       }
 
       @media (max-width: 360px) {
@@ -715,7 +640,6 @@ permalink: /
           <a href="#education">Education</a>
           <a href="#publication">Publications</a>
           <a href="#experience">Internships</a>
-          <a href="#projects">Projects</a>
         </nav>
       </div>
     </header>
@@ -727,10 +651,9 @@ permalink: /
             {{ site.title | escape }}
           </h1>
           <p class="lead">
-            Hi There! I am {{ site.title | escape }}, a student from Tsinghua University. I am interested in
-            post-training VLAs/WAMs in embodied systems. Currently I look into process reward
-            models. I am originally from Shanghai, China. If you would like to connect, please do
-            not hesitate to reach me at my email!
+            Hi There! I am {{ site.title | escape }}, a student from Tsinghua University.
+            I am interested in agentic robotics and post-training. I am originally from Shanghai,
+            China. If you would like to connect, please do not hesitate to reach me at my email!
           </p>
           <div class="hero-actions" aria-label="Contact and profile links">
             <a class="button primary" href="mailto:{{ site.social.email }}">📧 Email</a>
@@ -900,52 +823,6 @@ permalink: /
               </ul>
             </div>
             <div class="date">2025.08 - 2025.10</div>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="section" aria-labelledby="projects-title">
-        <div>
-          <h2 id="projects-title">Project Experience</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>Research Thesis: Dual-System based Vision-Language Navigation Grounded on Quadruped Robots</h3>
-            <p>
-              <strong>Senior Thesis @ Tsinghua &amp; ZJU</strong> | Supervised by Prof. Hua Chen
-            </p>
-            <p>2025.10 - 2026.03</p>
-            <ul class="detail-list">
-              <li>Combine YOLO-World (System 1) for high-frequency control and GLM 5.1 (System 2) for semantic reasoning.</li>
-              <li>Engineer an asynchronous confidence-gated mechanism, allowing the VLM to actively intervene when needed.</li>
-              <li>Deploy on DeepRobotics Lite 3 to achieve target tracking and occlusion handling in dynamic environments.</li>
-            </ul>
-            <div class="project-meta">
-              <div class="tag-row" aria-label="Project topics">
-                <span class="tag">VLN</span>
-                <span class="tag">Quadruped robot</span>
-                <span class="tag">YOLO-World</span>
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <h3>Research Thesis: Robotic Rehabilitation Therapy via Trajectory &amp; Assistance Level Planning</h3>
-            <p>
-              <strong>UIUC</strong> | Supervised by Prof. Dušan Stipanović
-            </p>
-            <p>2024.06 - 2025.04</p>
-            <ul class="detail-list">
-              <li>Develop Conv-BiLSTM architecture for trajectory prediction, improving accuracy by 10% over baseline models.</li>
-              <li>Achieve imitation learning via a bi-level optimization framework to synthesize human-like trajectories.</li>
-              <li>Formulate data-driven stochastic MPC with receding horizon to optimize assistance strategies under uncertainty.</li>
-            </ul>
-            <div class="project-meta">
-              <div class="tag-row" aria-label="Project topics">
-                <span class="tag">Conv-BiLSTM</span>
-                <span class="tag">Imitation learning</span>
-                <span class="tag">MPC</span>
-              </div>
-            </div>
           </article>
         </div>
       </section>

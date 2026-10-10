@@ -4,8 +4,7 @@ This repository hosts my personal website built with the [Chirpy](https://github
 
 ## Main Sections
 
-- Home: portrait, academic overview, education, experience, selected projects, and publication
-- Projects: selected robotics, embodied AI, and learning-systems work
+- Home: portrait, academic overview, education, experience, and publication
 - Travel: photo-preview cards for travel and photography posts
 
 The homepage is defined in `index.html`; shared fonts are loaded through
