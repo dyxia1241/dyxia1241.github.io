@@ -4,7 +4,7 @@ This repository hosts my personal website built with the [Chirpy](https://github
 
 ## Main Sections
 
-- Home: academic overview, education, experience, selected projects, and publication
+- Home: portrait, academic overview, education, experience, selected projects, and publication
 - Projects: selected robotics, embodied AI, and learning-systems work
 - Travel: photo-preview cards for travel and photography posts
 
@@ -12,6 +12,10 @@ The homepage is defined in `index.html`; shared fonts are loaded through
 `_includes/metadata-hook.html`. Theme-page styling lives in
 `assets/css/jekyll-theme-chirpy.scss`, and Travel reuses `_layouts/blogs.html`
 with a category filter.
+
+The optimized homepage portrait is `images/dayu-xia.jpg`. It appears beside the
+introduction on desktop and above it on smaller screens; replacements should
+omit EXIF metadata.
 
 ## Local Development
 
