@@ -16,13 +16,13 @@
 /* ---------- Dayu UI Polish ---------- */
 
 :root {
-  --dy-accent: #08736f;
-  --dy-accent-alt: #4756a6;
-  --dy-accent-soft: #edf7f6;
-  --dy-ink: #172126;
+  --dy-accent: #1e3a5f;
+  --dy-accent-alt: #7c2d12;
+  --dy-accent-soft: #f3efe8;
+  --dy-ink: #1c1917;
   --dy-paper: #ffffff;
-  --dy-border: #d7e1e4;
-  --bs-font-sans-serif: var(--font-sans);
+  --dy-border: #e4dfd7;
+  --bs-font-sans-serif: var(--font-serif);
 }
 
 html {
@@ -31,21 +31,21 @@ html {
 
 :root:not([data-bs-theme]),
 :root[data-bs-theme='light'] {
-  --main-bg: #f5f7f8;
-  --text-color: #243036;
-  --heading-color: #111a1f;
-  --link-color: #08736f;
-  --link-underline-color: #b9dcd8;
-  --sidebar-bg: #eef4f5;
-  --sidebar-border-color: #d7e1e4;
-  --sidebar-active-color: #064f59;
-  --sidebar-hover-bg: #e4eef0;
-  --sidebar-btn-bg: #f9fbfb;
-  --topbar-bg: rgb(251 252 253 / 86%);
+  --main-bg: #faf8f5;
+  --text-color: #2e2a27;
+  --heading-color: #1c1917;
+  --link-color: #1e3a5f;
+  --link-underline-color: #cfc8bc;
+  --sidebar-bg: #f3efe8;
+  --sidebar-border-color: #e4dfd7;
+  --sidebar-active-color: #1e3a5f;
+  --sidebar-hover-bg: #eae4da;
+  --sidebar-btn-bg: #faf8f5;
+  --topbar-bg: rgb(250 248 245 / 90%);
   --card-bg: #ffffff;
-  --card-hover-bg: #f0f6f7;
-  --card-shadow: rgb(23 33 38 / 7%) 0 10px 28px 0, rgb(23 33 38 / 8%) 0 0 0 1px;
-  --dy-page-gradient: linear-gradient(180deg, rgb(255 255 255 / 62%), rgb(8 115 111 / 4%));
+  --card-hover-bg: #f7f4ee;
+  --card-shadow: rgb(28 25 23 / 6%) 0 8px 24px 0, rgb(28 25 23 / 8%) 0 0 0 1px;
+  --dy-page-gradient: linear-gradient(180deg, rgb(255 255 255 / 40%), rgb(243 239 232 / 30%));
 }
 
 @mixin dark-palette {

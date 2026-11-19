@@ -19,18 +19,19 @@ permalink: /
     {% include metadata-hook.html %}
     <style>
       :root {
-        --bg: #f5f7f8;
+        --bg: #faf8f5;
         --paper: #ffffff;
-        --paper-muted: #f9fbfb;
-        --ink: #172126;
-        --muted: #5a6870;
-        --line: #d7e1e4;
-        --accent: #08736f;
-        --accent-strong: #064f59;
-        --accent-alt: #4756a6;
-        --soft: #edf7f6;
-        --soft-alt: #f0f2fb;
-        --shadow: 0 12px 32px rgba(23, 33, 38, 0.05);
+        --ink: #1c1917;
+        --ink-soft: #2e2a27;
+        --muted: #57534e;
+        --subtle: #78716c;
+        --line: #e4dfd7;
+        --line-strong: #cfc8bc;
+        --accent: #1e3a5f;
+        --accent-hover: #7c2d12;
+        --venue: #7a2828;
+        --badge-bg: #f3efe8;
+        --badge-border: #d8d0c3;
       }
 
       * {
@@ -43,33 +44,38 @@ permalink: /
 
       body {
         margin: 0;
-        background:
-          linear-gradient(180deg, #fbfcfd 0, var(--bg) 360px, #eef5f4 100%);
+        background-color: var(--bg);
         color: var(--ink);
-        font-family: var(--font-sans);
-        font-size: 16px;
-        line-height: 1.7;
+        font-family: var(--font-serif);
+        font-size: 19.5px;
+        line-height: 1.68;
         -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
+        font-feature-settings: "kern" 1, "liga" 1, "lnum" 1;
       }
 
       a {
         color: var(--accent);
+        text-decoration: underline;
+        text-decoration-color: rgba(30, 58, 95, 0.32);
         text-decoration-thickness: 1px;
         text-underline-offset: 3px;
+        transition: color 0.16s ease, text-decoration-color 0.16s ease;
       }
 
       a:hover {
-        color: var(--accent-alt);
+        color: var(--accent-hover);
+        text-decoration-color: rgba(124, 45, 18, 0.55);
       }
 
       a:focus-visible {
         outline: 2px solid var(--accent);
-        outline-offset: 4px;
+        outline-offset: 3px;
       }
 
       .shell {
-        width: min(1120px, calc(100% - 48px));
+        width: min(880px, calc(100% - 48px));
         margin: 0 auto;
       }
 
@@ -77,220 +83,200 @@ permalink: /
         position: sticky;
         top: 0;
         z-index: 10;
-        border-bottom: 1px solid rgba(215, 225, 228, 0.88);
-        background: rgba(251, 252, 253, 0.9);
-        backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--line);
+        background: rgba(250, 248, 245, 0.92);
+        backdrop-filter: blur(12px);
       }
 
       .nav {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-between;
-        min-height: 64px;
+        min-height: 62px;
+        padding: 16px 0 14px;
         gap: 24px;
       }
 
       .brand {
         display: inline-flex;
         align-items: baseline;
-        gap: 10px;
+        gap: 12px;
         color: var(--ink);
         text-decoration: none;
         white-space: nowrap;
       }
 
       .brand strong {
-        font-size: 17px;
-        font-weight: 650;
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
       }
 
       .brand span {
         color: var(--muted);
-        font-size: 13px;
+        font-size: 16px;
+        font-style: italic;
       }
 
       .links {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 8px 16px;
-        font-size: 13px;
-        font-weight: 550;
+        gap: 6px 24px;
+        font-size: 16px;
+        font-variant-caps: small-caps;
+        letter-spacing: 0.06em;
       }
 
       .links a {
-        padding: 8px 0;
+        padding: 4px 0;
         color: var(--muted);
         text-decoration: none;
       }
 
       .links a:hover {
-        color: var(--accent-strong);
+        color: var(--ink);
       }
 
       main {
-        padding: 48px 0 72px;
+        padding: 52px 0 76px;
       }
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 256px;
+        grid-template-columns: minmax(0, 1fr) 208px;
         align-items: center;
-        gap: 64px;
-        padding: 32px 0 64px;
+        gap: 52px;
+        padding: 8px 0 48px;
       }
 
       .hero-content {
-        max-width: 820px;
-        text-align: left;
+        max-width: 620px;
       }
 
       .hero-portrait {
         display: block;
         width: 100%;
         height: auto;
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        box-shadow: var(--shadow);
-      }
-
-      .eyebrow {
-        margin: 0 0 16px;
-        color: var(--accent-alt);
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 0;
-        text-transform: uppercase;
+        border: 1px solid var(--line-strong);
+        border-radius: 6px;
+        padding: 4px;
+        background: var(--paper);
+        box-shadow: 0 6px 20px rgba(28, 25, 23, 0.06);
       }
 
       h1,
       h2,
       h3 {
-        font-family: var(--font-sans);
+        font-family: var(--font-serif);
+        color: var(--ink);
         font-weight: 600;
-        line-height: 1.3;
-        letter-spacing: -0.025em;
+        line-height: 1.25;
+        font-feature-settings: "kern" 1, "liga" 1, "lnum" 1;
       }
 
       h1 {
         margin: 0;
-        color: #111a1f;
-        font-size: 68px;
-        font-weight: 650;
-        line-height: 1.1;
-        letter-spacing: -0.045em;
+        font-size: 46px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
       }
 
-      h1 .cn {
-        display: block;
-        margin-top: 6px;
+      .hero-subtitle {
+        margin: 6px 0 0;
         color: var(--muted);
-        font-family: var(--font-sans);
-        font-size: 32px;
-        font-weight: 500;
+        font-size: 19px;
+        font-style: italic;
       }
 
       .lead {
-        max-width: 760px;
-        margin: 26px 0 0;
-        color: #354247;
-        font-size: 19px;
-        line-height: 1.8;
-        text-align: left;
+        margin: 20px 0 0;
+        color: var(--ink-soft);
+        font-size: 20px;
+        line-height: 1.72;
       }
 
       .contact-email {
-        font-family: Consolas, "Liberation Mono", "Courier New", monospace;
+        font-family: var(--font-serif);
+        font-style: italic;
+        color: var(--ink);
+        border-bottom: 1px dotted var(--line-strong);
       }
 
       .hero-actions {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 10px;
-        margin-top: 30px;
+        align-items: center;
+        gap: 18px;
+        margin-top: 22px;
+        font-size: 17px;
       }
 
       .button {
         display: inline-flex;
         align-items: center;
-        min-height: 42px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        padding: 8px 15px;
-        background: var(--paper);
-        color: var(--ink);
-        font-size: 14px;
+        gap: 7px;
+        color: var(--accent);
+        font-size: 17px;
+        font-variant-caps: small-caps;
+        letter-spacing: 0.05em;
         font-weight: 600;
         text-decoration: none;
-        box-shadow: 0 6px 18px rgba(23, 33, 38, 0.04);
-        transition: border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+        border-bottom: 1px solid rgba(30, 58, 95, 0.35);
+        padding-bottom: 2px;
+        transition: color 0.16s ease, border-color 0.16s ease;
+      }
+
+      .button svg {
+        width: 15px;
+        height: 15px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.75;
+        transform: translateY(1px);
       }
 
       .button:hover {
-        border-color: #b7c7cc;
-        color: var(--accent-strong);
-        transform: translateY(-1px);
-      }
-
-      .button.primary {
-        border-color: var(--accent);
-        background: var(--accent);
-        color: #ffffff;
-        box-shadow: 0 10px 24px rgba(8, 115, 111, 0.18);
-      }
-
-      .button.primary:hover {
-        border-color: var(--accent-strong);
-        background: var(--accent-strong);
-        color: #ffffff;
+        color: var(--accent-hover);
+        border-bottom-color: var(--accent-hover);
       }
 
       .section {
-        display: grid;
-        grid-template-columns: 170px minmax(0, 1fr);
-        gap: 44px;
-        padding: 48px 0;
-        border-top: 1px solid var(--line);
-        scroll-margin-top: 96px;
+        padding: 36px 0 12px;
+        scroll-margin-top: 84px;
+      }
+
+      .section-header {
+        margin-bottom: 22px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--line-strong);
       }
 
       .section h2 {
-        display: inline-block;
         margin: 0;
-        padding-top: 8px;
-        border-top: 3px solid var(--accent);
-        color: var(--accent-strong);
-        font-family: var(--font-sans);
+        color: var(--ink);
         font-size: 24px;
-        font-weight: 650;
-        line-height: 1.25;
-      }
-
-      .section-kicker {
-        margin: 8px 0 0;
-        color: var(--muted);
-        font-size: 14px;
-        line-height: 1.5;
+        font-weight: 600;
+        font-variant-caps: small-caps;
+        letter-spacing: 0.06em;
       }
 
       .entry-list {
         display: grid;
         gap: 0;
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        overflow: hidden;
-        background: var(--paper);
-        box-shadow: var(--shadow);
       }
 
       .entry {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(138px, max-content);
+        grid-template-columns: minmax(0, 1fr) max-content;
         gap: 24px;
         align-items: start;
         border-bottom: 1px solid var(--line);
-        padding: 22px;
+        padding: 18px 0;
+      }
+
+      .entry:first-child {
+        padding-top: 4px;
       }
 
       .entry:last-child {
@@ -300,28 +286,31 @@ permalink: /
       .entry h3 {
         margin: 0;
         font-size: 20px;
-        line-height: 1.4;
+        font-weight: 600;
+        line-height: 1.35;
       }
 
       #education .entry h3 {
-        font-size: 24px;
+        font-size: 20.5px;
       }
 
       .entry-heading {
         display: flex;
         align-items: center;
-        gap: 13px;
+        gap: 16px;
       }
 
       .entry-title {
         min-width: 0;
       }
 
+      .entry p,
       .entry .entry-supervisor {
-        margin-top: 4px;
+        margin: 3px 0 0;
         color: var(--muted);
-        font-size: 14px;
-        line-height: 1.35;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 1.45;
       }
 
       .affiliation-logo {
@@ -329,203 +318,202 @@ permalink: /
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 64px;
-        height: 64px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: linear-gradient(180deg, #ffffff, var(--paper-muted));
+        width: 46px;
+        height: 46px;
       }
 
       .affiliation-logo img {
         display: block;
-        width: 52px;
-        height: 52px;
+        width: 42px;
+        height: 42px;
         object-fit: contain;
+        mix-blend-mode: multiply;
+        filter: contrast(1.06) brightness(1.03);
       }
 
       .affiliation-logo.internship-logo {
-        width: 122px;
-        height: 72px;
+        width: 88px;
+        height: 44px;
+        justify-content: flex-start;
       }
 
       .affiliation-logo.internship-logo img {
-        width: 108px;
+        width: 84px;
         height: auto;
-        max-height: 62px;
-      }
-
-      .entry p {
-        margin: 7px 0 0;
-        color: var(--muted);
-        font-size: 15px;
+        max-height: 40px;
       }
 
       .date {
         justify-self: end;
-        border-radius: 6px;
-        padding: 3px 8px;
-        background: var(--soft-alt);
-        color: var(--accent-alt);
-        font-size: 12px;
-        font-weight: 600;
+        color: var(--subtle);
+        font-size: 16.5px;
+        font-style: italic;
         font-variant-numeric: tabular-nums;
+        font-feature-settings: "tnum" 1, "lnum" 1;
         white-space: nowrap;
+        padding-top: 2px;
       }
 
       .detail-list {
-        margin: 14px 0 0;
-        padding-left: 18px;
-        color: var(--muted);
-        font-size: 15px;
-        line-height: 1.8;
+        margin: 10px 0 0;
+        padding-left: 22px;
+        color: var(--ink-soft);
+        font-size: 18px;
+        line-height: 1.66;
       }
 
       .detail-list li + li {
-        margin-top: 8px;
-      }
-
-      .publication {
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 24px;
-        background: var(--paper);
-        box-shadow: var(--shadow);
-      }
-
-      .publication-accepted {
-        border-color: #bad7d2;
-        border-left: 3px solid var(--accent);
+        margin-top: 5px;
       }
 
       .publication-list {
         display: grid;
-        gap: 16px;
+        gap: 0;
+      }
+
+      .publication {
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .publication:first-child {
+        padding-top: 4px;
+      }
+
+      .publication:last-child {
+        border-bottom: 0;
       }
 
       .publication h3 {
-        margin: 0 0 10px;
-        max-width: 820px;
-        font-size: 20px;
-        line-height: 1.45;
-        text-wrap: balance;
+        margin: 0 0 6px;
+        font-size: 20.5px;
+        font-weight: 600;
+        line-height: 1.4;
       }
 
       .publication p {
         margin: 0;
         color: var(--muted);
-        font-size: 14px;
+        font-size: 18px;
+        line-height: 1.55;
+      }
+
+      .publication p strong {
+        color: var(--ink);
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: var(--line-strong);
+        text-underline-offset: 3px;
       }
 
       .publication .meta {
-        margin-top: 12px;
-        color: #354247;
-        font-size: 14px;
+        margin-top: 6px;
+        color: var(--ink-soft);
+        font-size: 17.5px;
+        font-style: italic;
       }
 
       .publication-venue {
-        color: var(--accent-strong);
+        color: var(--venue);
+        font-weight: 600;
       }
 
       .publication-status {
         display: inline-block;
-        margin: 3px 6px;
-        border: 1px solid #c8d9d7;
-        border-radius: 999px;
-        padding: 2px 9px;
-        background: var(--soft);
-        color: var(--accent-strong);
-        font-size: 11px;
+        margin: 0 6px;
+        border: 1px solid var(--badge-border);
+        border-radius: 3px;
+        padding: 0 7px;
+        background: var(--badge-bg);
+        color: var(--ink-soft);
+        font-size: 13px;
+        font-style: normal;
+        font-variant-caps: small-caps;
         font-weight: 600;
         letter-spacing: 0.05em;
-        text-transform: uppercase;
-        vertical-align: middle;
+        vertical-align: 1px;
       }
 
       .publication .meta a {
-        font-weight: 700;
+        font-style: normal;
+        font-variant-caps: small-caps;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        margin-left: 4px;
         white-space: nowrap;
+      }
+
+      .publication .meta a::before {
+        content: "[";
+        color: var(--subtle);
+      }
+
+      .publication .meta a::after {
+        content: "]";
+        color: var(--subtle);
       }
 
       .tag-row {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 16px;
+        align-items: center;
+        gap: 0;
+        margin-top: 6px;
+        color: var(--subtle);
+        font-size: 15.5px;
       }
 
       .tag {
-        display: inline-flex;
-        align-items: center;
-        min-height: 28px;
-        border: 1px solid #c8d9d7;
-        border-radius: 999px;
-        padding: 3px 10px;
-        background: var(--soft);
-        color: var(--accent-strong);
-        font-size: 12px;
-        font-weight: 500;
+        display: inline;
+      }
+
+      .tag + .tag::before {
+        content: " · ";
+        margin: 0 6px;
+        color: var(--line-strong);
       }
 
       .footer {
+        margin-top: 40px;
         border-top: 1px solid var(--line);
-        padding: 28px 0 36px;
-        color: var(--muted);
-        font-size: 13px;
+        padding: 24px 0 36px;
+        color: var(--subtle);
+        font-size: 15.5px;
+        font-style: italic;
       }
 
-      @media (max-width: 960px) {
-        .hero {
-          grid-template-columns: minmax(0, 1fr) 224px;
-          gap: 40px;
-          padding-top: 10px;
-        }
-
-        h1 {
-          font-size: 56px;
-        }
-
-        h1 .cn {
-          font-size: 29px;
-        }
-      }
-
-      @media (max-width: 860px) {
+      @media (max-width: 760px) {
         .hero {
           grid-template-columns: 1fr;
-          justify-items: center;
-          gap: 28px;
-        }
-
-        .hero-content {
-          text-align: center;
+          justify-items: start;
+          gap: 24px;
+          padding-bottom: 32px;
         }
 
         .hero-portrait {
           order: -1;
-          width: 200px;
+          width: 156px;
         }
 
-        .hero-actions {
-          justify-content: center;
-        }
-
-        .section {
-          grid-template-columns: 1fr;
-          gap: 22px;
-          padding: 40px 0;
+        h1 {
+          font-size: 38px;
         }
       }
 
       @media (max-width: 640px) {
+        body {
+          font-size: 18px;
+        }
+
         .shell {
-          width: min(100% - 28px, 1120px);
+          width: min(100% - 32px, 880px);
         }
 
         .nav {
           align-items: flex-start;
           flex-direction: column;
-          padding: 14px 0;
-          gap: 10px;
+          padding: 12px 0;
+          gap: 6px;
         }
 
         .brand {
@@ -536,86 +524,46 @@ permalink: /
 
         .links {
           justify-content: flex-start;
-          gap: 8px 14px;
+          gap: 4px 18px;
         }
 
         .section {
-          scroll-margin-top: 148px;
+          scroll-margin-top: 120px;
+          padding-top: 28px;
         }
 
         main {
           padding-top: 28px;
         }
 
-        .hero {
-          padding-bottom: 52px;
-        }
-
-        .hero-portrait {
-          width: 180px;
-        }
-
         .lead {
-          font-size: 17px;
-        }
-
-        h1 {
-          font-size: 44px;
-        }
-
-        h1 .cn {
-          font-size: 25px;
+          font-size: 18.5px;
         }
 
         .entry {
           grid-template-columns: 1fr;
           gap: 4px;
-          padding: 20px 18px;
+          padding: 16px 0;
         }
 
         .date {
           justify-self: start;
           order: -1;
-          margin-bottom: 6px;
+          margin-bottom: 2px;
         }
 
         .entry-heading {
           gap: 12px;
         }
 
-        #education .entry h3 {
-          font-size: 22px;
-        }
-
         #experience .entry-heading {
           align-items: flex-start;
           flex-direction: column;
-          gap: 14px;
-        }
-
-        .publication {
-          padding: 20px 18px;
+          gap: 8px;
         }
 
         .publication h3 {
-          font-size: 18px;
-        }
-
-        .affiliation-logo {
-          width: 56px;
-          height: 56px;
-        }
-
-        .affiliation-logo img {
-          width: 44px;
-          height: 44px;
-        }
-
-      }
-
-      @media (max-width: 360px) {
-        .section {
-          scroll-margin-top: 176px;
+          font-size: 19px;
         }
       }
 
@@ -624,12 +572,9 @@ permalink: /
           scroll-behavior: auto;
         }
 
+        a,
         .button {
           transition: none;
-        }
-
-        .button:hover {
-          transform: none;
         }
       }
     </style>
@@ -639,7 +584,7 @@ permalink: /
       <div class="shell nav">
         <a class="brand" href="#top" aria-label="Back to top">
           <strong>{{ site.title | escape }}</strong>
-          <span>VLA/WAM @Tsinghua University</span>
+          <span>VLA/WAM @ Tsinghua University</span>
         </a>
         <nav class="links" aria-label="Primary">
           <a href="#education">Education</a>
@@ -655,14 +600,26 @@ permalink: /
           <h1 id="hero-title">
             {{ site.title | escape }}
           </h1>
+          <p class="hero-subtitle">M.Eng. Student at Tsinghua University</p>
           <p class="lead">
-            Hi There! I am {{ site.title | escape }}, a student from Tsinghua University.
-            I am interested in agentic robotics and post-training. I am originally from Shanghai,
-            China. Feel free to reach me at <span class="contact-email">dyxia1241 at gmail dot com</span> !
+            Hi there! I am {{ site.title | escape }}, a graduate student at Tsinghua University.
+            My research interests focus on agentic robotics and post-training. I am originally from Shanghai,
+            China. Feel free to reach me at <span class="contact-email">dyxia1241 at gmail dot com</span>.
           </p>
           <div class="hero-actions" aria-label="Contact and profile links">
-            <a class="button primary" href="mailto:{{ site.social.email }}">📧 Email</a>
-            <a class="button" href="https://github.com/{{ site.github.username }}">💻 GitHub</a>
+            <a class="button" href="mailto:{{ site.social.email }}">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m3 7 9 6 9-6"></path>
+              </svg>
+              Email
+            </a>
+            <a class="button" href="https://github.com/{{ site.github.username }}">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path>
+              </svg>
+              GitHub
+            </a>
           </div>
         </div>
         <img
@@ -677,7 +634,7 @@ permalink: /
       </section>
 
       <section id="education" class="section" aria-labelledby="education-title">
-        <div>
+        <div class="section-header">
           <h2 id="education-title">Education</h2>
         </div>
         <div class="entry-list">
@@ -739,7 +696,7 @@ permalink: /
       </section>
 
       <section id="publication" class="section" aria-labelledby="publication-title">
-        <div>
+        <div class="section-header">
           <h2 id="publication-title">Publications</h2>
         </div>
         <div class="publication-list">
@@ -780,7 +737,7 @@ permalink: /
       </section>
 
       <section id="experience" class="section" aria-labelledby="experience-title">
-        <div>
+        <div class="section-header">
           <h2 id="experience-title">Internship Experience</h2>
         </div>
         <div class="entry-list">
